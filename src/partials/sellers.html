@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Sellers</title>
+    <!-- Link to fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to normalize  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <!-- Link to css  -->
+    <link rel="stylesheet" href="../css/sellers.css" />
+  </head>
+  <body>
+    <section class="sellers-section">
+      <div class="sellers-container container">
+        <h2 class="sellers-title">
+          <span class="selers-title-span">Top</span> Sellers
+        </h2>
+        <ul class="sellers-list">
+          <li class="sellers-list-item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ../img/sellers-section/img-2.webp    1x,
+                  ../img/sellers-section/img-2@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ../img/sellers-section/img-2.png    1x,
+                  ../img/sellers-section/img-2@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../img/sellers-section/img-2.webp    1x,
+                  ../img/sellers-section/img-2@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../img/sellers-section/img-2.png    1x,
+                  ../img/sellers-section/img-2@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                class="sellers-img"
+                src="../img/sellers-section/img-2.png"
+                alt="Top sellers"
+                width="335"
+                height="464"
+              />
+            </picture>
+            <p class="sellers-desc">
+              Crazy enough chocolate originates from a bean just like the coffee
+              bean called Cacao. Cacao has been around for thousands of years
+              and was first discovered by the Native American tribe called the
+              Mayans.
+            </p>
+          </li>
+          <li class="sellers-list-item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ../img/sellers-section/img-1.webp    1x,
+                  ../img/sellers-section/img-1@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ../img/sellers-section/img-1.png    1x,
+                  ../img/sellers-section/img-1.@2xpng 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../img/sellers-section/img-1.webp    1x,
+                  ../img/sellers-section/img-1@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../img/sellers-section/img-1.png    1x,
+                  ../img/sellers-section/img-1.@2xpng 2x
+                "
+                type="image/png"
+              />
+              <img
+                class="sellers-img"
+                src="../img/sellers-section/img-1.png"
+                alt="Top sellers"
+                width="335"
+                height="464"
+              />
+            </picture>
+            <button type="button" class="sellers-btn">Buy now</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

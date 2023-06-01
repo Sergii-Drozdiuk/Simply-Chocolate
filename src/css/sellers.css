@@ -1,0 +1,84 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+/*
+  |========================
+  | Sellers section
+  |========================
+*/
+.sellers-section {
+  padding: 72px 0;
+}
+.sellers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sellers-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.selers-title-span {
+  color: #fd9222;
+}
+.sellers-list-item {
+  margin-bottom: 32px;
+}
+.sellers-desc {
+  width: 306px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.sellers-img {
+  margin-bottom: 20px;
+}
+.sellers-btn {
+  display: block;
+  border: none;
+  padding: 12px 28px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #ffffff;
+  margin: 0 auto;
+}
