@@ -36,10 +36,7 @@ p {
   .sellers-list-item-desktop {
     display: none;
   }
-  .sellers-desc-desktop {
-    display: none;
-  }
-  .sellers-btn-desktop {
+  .sellers-dektop-container {
     display: none;
   }
 }
@@ -54,7 +51,6 @@ p {
 .sellers-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .sellers-title {
@@ -68,7 +64,7 @@ p {
 .selers-title-span {
   color: #fd9222;
 }
-.sellers-list-item {
+.sellers-list-item:first-child {
   margin-bottom: 32px;
 }
 .sellers-desc {
@@ -94,6 +90,11 @@ p {
   color: #ffffff;
   margin: 0 auto;
 }
+/*
+  |========================
+  | Tablet
+  |========================
+*/
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -101,6 +102,8 @@ p {
   }
   .sellers-section {
     padding: 100px 0;
+    display: block;
+    width: 100%;
   }
   .sellers-title {
     font-size: 24px;
@@ -113,16 +116,23 @@ p {
   .sellers-list-item {
     height: 464px;
   }
+  .sellers-list-item:first-child {
+    margin-bottom: 0;
+  }
   .sellers-btn {
     margin: 0 0 0 auto;
     padding: 14px 40px;
     font-size: 18px;
   }
   .sellers-img {
-    margin-bottom: 32px;
     width: 344px;
   }
 }
+/*
+  |========================
+  | Desktop
+  |========================
+*/
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -141,7 +151,6 @@ p {
   }
   .sellers-img {
     width: 368px;
-    margin-bottom: 0;
   }
   .sellers-img-desktop {
     width: 368px;
