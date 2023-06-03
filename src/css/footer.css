@@ -4,15 +4,18 @@
   padding: 32px 0;
 }
 
-/* .footer-container {
-  display: flex;
-  flex-direction: column;
-} */
-
 .footer-contet {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contet {
   padding-bottom: 32px;
   margin-bottom: 32px;
 }
