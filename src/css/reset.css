@@ -7,19 +7,64 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-ul {
+.section {
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 128px;
+  }
+}
+
+.container {
+  min-width: 300px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+ul,
+.list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-a {
+a,
+.link {
   color: currentColor;
   text-decoration: none;
 }
@@ -32,4 +77,19 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
