@@ -37,4 +37,17 @@
   --main-color: #111111;
   --secondary-color: #1e1823;
   --brand-color: #fd9222;
+  --light-color: #ffffff;
+  --fight-more-transparent:rgba(255, 255, 255, 0.1);
+  --light-transparent: rgba(255, 255, 255, 0.5);
+  --light-semi-transparent: color: rgba(255, 255, 255, 0.7);
+  --dark-transparent: rgba(17, 17, 17, 0.1);
+  --dark-semi-transparent: rgba(17, 17, 17, 0.7);
+  --grey-color: #FAFAFA;
+  --grey-transparent-color: rgba(64, 64, 64, 0.3);
+  --border-color: rgba(17, 17, 17, 0.05);
+  --modal-bg: #E2E2E2;
+
+
+
 }
