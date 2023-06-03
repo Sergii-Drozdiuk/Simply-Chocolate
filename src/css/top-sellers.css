@@ -62,7 +62,7 @@
 */
 @media only screen and (min-width: 768px) {
   .top-sellers-dektop-container {
-    width: 704px;
+    width: 768px;
   }
   .top-sellers-container {
     margin-bottom: 32px;
@@ -115,7 +115,7 @@
 */
 @media only screen and (min-width: 1200px) {
   .top-sellers-dektop-container {
-    width: 1136px;
+    width: 1200px;
   }
   .top-sellers-list-item-desktop {
     height: 464px;
