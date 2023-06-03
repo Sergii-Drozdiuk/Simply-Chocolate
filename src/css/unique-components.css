@@ -11,6 +11,10 @@
 .unique-components-text {
     margin-bottom: 32px;
 }
+
+.unique-components-card-text {
+    
+}
 @media only screen and (min-width: 768px) {
   .unique-components-text {
     max-width: 486px;
@@ -40,16 +44,29 @@
     flex-direction: column;
     gap: 20px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .unique-components-list {
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .list {
 }
 .unique-components-item {
-    /* width: 100%; */
+    
 }
+
+@media only screen and (min-width: 768px) {
+  .unique-components-item {
+    flex-basis: calc((100% - 30px)/2);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .unique-components-item {
+      flex-basis: calc((100% - 57px)/4);
+    }
+  }
 .item {
 }
 .unique-components-img {
@@ -81,26 +98,22 @@
 .button {
 }
  
-.container-card{
+/* .container-card{
   perspective: 500px; 
-}
-.container-card:hover > .card {
+} */
+/* .container-card:hover > .card {
    transform: rotateY(180deg);
-}
+} */
 .card {
   position: relative;
-  width: 100%;
-  height: 100%;
   transition: transform 500ms;
   transform-style: preserve-3d;
 }
 
-.front-card ,
+/* .front-card ,
 .back-card {
-    /* width: 100%;
-    height: 270px; */
  backface-visibility: hidden;
-}
+} */
 
 .front-card {
   display: flex;
@@ -134,20 +147,19 @@
 }
 
 .back-card {
-  width: 335px;
-  height: 270px;
   padding: 28px;
   background-color: var(--light-color);
   border-radius: 15px;
   
-  position: absolute;
+  /* position: absolute; 
   left: 0;
   top: 0;
 
-  transform: rotateY(180deg);
+ transform: rotateY(180deg);  */
    
 }
 
 .back-card-title{
+  text-align: start;
   margin-bottom: 8px;
 }
