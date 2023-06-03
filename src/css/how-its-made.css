@@ -1,4 +1,6 @@
 @import url('./reset.css');
+@import url('./vite-promo.css');
+
 .how-its-made-subject {
     text-align: center;
     margin-bottom: 32px;
