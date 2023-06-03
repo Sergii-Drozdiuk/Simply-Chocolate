@@ -103,6 +103,11 @@
     font-size: 18px;
     color: var(--light-color);
   }
+  .top-sellers-btn-desktop:hover,
+  .top-sellers-btn-desktop:focus {
+    background-color: #fcf1e0;
+    color: var(--brand-color);
+  }
   .top-sellers-img {
     width: 344px;
     margin-bottom: 0;
