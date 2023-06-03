@@ -1,6 +1,8 @@
 @import url('./reset.css');
 @import url('./vite-promo.css');
-
+.how-its-made-section{
+    min-width: 300px;
+}
 .how-its-made-subject {
     text-align: center;
     margin-bottom: 32px;
@@ -47,6 +49,7 @@
     background-position: center;
     background-size: cover;
     max-width: 614px;
+    border-radius: 15%;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -126,6 +129,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    border-radius: 50%;
 }
 
 .how-its-made-video {
@@ -149,11 +153,6 @@
 .how-its-made-icon:hover,
 .how-its-made-icon:focus {
     z-index: 0;
-}
-
-.how-its-made-cont {
-    position: relative;
-    border-radius: 15px;
 }
 
 .how-its-made-icon {
