@@ -1,0 +1,123 @@
+/*
+  |========================
+  | Sellers section
+  |========================
+*/
+@media only screen and (max-width: 1199px) {
+  .sellers-list-item-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sellers-dektop-container {
+    display: none;
+  }
+}
+.sellers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sellers-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.selers-title-span {
+  color: var(--brand-color);
+}
+.sellers-list-item:first-child {
+  margin-bottom: 32px;
+}
+.sellers-desc {
+  width: 306px;
+}
+.sellers-img {
+  width: 335px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.sellers-btn {
+  display: block;
+  padding: 12px 28px;
+  background-color: var(--brand-color);
+  border-radius: 100px;
+  font-weight: 600;
+  color: var(--light-color);
+  margin: 0 auto;
+}
+/*
+  |========================
+  | Tablet
+  |========================
+*/
+@media only screen and (min-width: 768px) {
+  .sellers-container {
+    margin-bottom: 32px;
+  }
+  .sellers-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .sellers-list {
+    display: flex;
+    gap: 16px;
+  }
+  .sellers-list-item {
+    height: 464px;
+  }
+  .sellers-list-item:first-child {
+    margin-bottom: 0;
+  }
+  .sellers-desc {
+    display: none;
+  }
+  .sellers-dektop-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .sellers-desc-desktop {
+    width: 306px;
+  }
+  .sellers-btn {
+    display: none;
+  }
+  .sellers-btn-desktop {
+    padding: 14px 40px;
+    background-color: var(--brand-color);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--light-color);
+  }
+  .sellers-img {
+    width: 344px;
+    margin-bottom: 0;
+  }
+}
+/*
+  |========================
+  | Desktop
+  |========================
+*/
+@media only screen and (min-width: 1200px) {
+  .sellers-list-item-desktop {
+    height: 464px;
+  }
+  .sellers-list-item {
+    margin-bottom: 0;
+  }
+  .sellers-img {
+    width: 368px;
+  }
+  .sellers-img-desktop {
+    width: 368px;
+  }
+  .sellers-desc-desktop {
+    width: 407px;
+  }
+}
