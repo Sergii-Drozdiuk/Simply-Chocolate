@@ -1,41 +1,45 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .advantages-title {
-  width: 173px;
-  height: 22px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
   margin-bottom: 18px;
+  text-transform: capitalize;
+  text-align: justify;
+}
+
+.advantages-title-chocolate {
+  width: 173px;
+  height: 22px;
+}
+
+.advantages-title-coin {
+  width: 150px;
+  height: 22px;
+}
+
+.advantages-title-spoon {
+  width: 155px;
+  height: 22px;
+  letter-spacing: 0.01em;
 }
 .advantages-text {
-  width: 308px;
-  height: 102px;
-  font-family: 'Montserrat';
   line-height: 17px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
 
+.advantages-text-chocolate {
+  height: 102px;
+}
+
+.advantages-text-spoon {
+  height: 85px;
+}
+
 .advantages-container {
   min-width: 320px;
-  height: 720px;
-  left: 0px;
-  top: 754px;
+  height: 800px;
   padding-left: 20px;
   padding-right: 47px;
   padding-top: 20px;
@@ -54,6 +58,10 @@
   border-radius: 50%;
 }
 
+.advantages-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .advantages-icon {
   display: flex;
   justify-content: center;
@@ -65,6 +73,9 @@
   .advantages-container {
     min-width: 375px;
     height: 792px;
+  }
+  .advantages-text-coin {
+    min-height: 119px;
   }
 }
 
@@ -84,9 +95,12 @@
     column-gap: 60px;
     flex-wrap: wrap;
   }
+  .advantages-item {
+    width: calc((100% - 60px) / 2);
+  }
 
-  .advantages-text {
-    height: 119px;
+  .advantages-item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -100,19 +114,30 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    width: 1100px;
-    height: 244px;
     padding: 0px;
-    gap: 70px;
+    gap: 88px;
   }
 
   .advantages-item {
+    position: relative;
     width: 308px;
     height: 244px;
   }
 
+  .advantages-text {
+    width: 308px;
+    height: 85px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+
+    color: rgba(255, 255, 255, 0.7);
+  }
+
   .advantages-item:not(:last-child)::after {
     content: '';
+    position: absolute;
+    top: 124px;
+    left: 270px;
     width: 124px;
     height: 0px;
     border: 1px solid rgba(255, 255, 255, 0.5);
