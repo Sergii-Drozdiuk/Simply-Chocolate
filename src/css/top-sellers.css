@@ -48,7 +48,6 @@
   font-weight: 600;
   color: var(--light-color);
   margin: 0 auto;
-  border: none;
   transition: var(--transition-timings);
 }
 .top-sellers-btn:hover,
@@ -97,7 +96,6 @@
     display: none;
   }
   .top-sellers-btn-desktop {
-    border: none;
     padding: 14px 40px;
     background-color: var(--brand-color);
     border-radius: 100px;
