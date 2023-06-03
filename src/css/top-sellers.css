@@ -1,0 +1,135 @@
+/*
+  |========================
+  | Sellers section
+  |========================
+*/
+@media only screen and (max-width: 1199px) {
+  .top-sellers-list-item-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top-sellers-dektop-container {
+    display: none;
+  }
+}
+.top-sellers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-sellers-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.top-selers-title-span {
+  color: var(--brand-color);
+}
+.top-sellers-list-item:first-child {
+  margin-bottom: 32px;
+}
+.top-sellers-desc {
+  width: 306px;
+}
+.top-sellers-img {
+  width: 335px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.top-sellers-btn {
+  display: block;
+  padding: 12px 28px;
+  background-color: var(--brand-color);
+  border-radius: 100px;
+  font-weight: 600;
+  color: var(--light-color);
+  margin: 0 auto;
+  transition: var(--transition-timings);
+}
+.top-sellers-btn:hover,
+.top-sellers-btn:focus {
+  background-color: #fcf1e0;
+  color: var(--brand-color);
+}
+/*
+  |========================
+  | Tablet
+  |========================
+*/
+@media only screen and (min-width: 768px) {
+  .top-sellers-dektop-container {
+    width: 768px;
+  }
+  .top-sellers-container {
+    margin-bottom: 32px;
+  }
+  .top-sellers-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .top-sellers-list {
+    display: flex;
+    gap: 16px;
+  }
+  .top-sellers-list-item {
+    height: 464px;
+  }
+  .top-sellers-list-item:first-child {
+    margin-bottom: 0;
+  }
+  .top-sellers-desc {
+    display: none;
+  }
+  .top-sellers-dektop-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .top-sellers-desc-desktop {
+    width: 306px;
+  }
+  .top-sellers-btn {
+    display: none;
+  }
+  .top-sellers-btn-desktop {
+    padding: 14px 40px;
+    background-color: var(--brand-color);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--light-color);
+  }
+  .top-sellers-img {
+    width: 344px;
+    margin-bottom: 0;
+  }
+}
+/*
+  |========================
+  | Desktop
+  |========================
+*/
+@media only screen and (min-width: 1200px) {
+  .top-sellers-dektop-container {
+    width: 1200px;
+  }
+  .top-sellers-list-item-desktop {
+    height: 464px;
+  }
+  .top-sellers-list-item {
+    margin-bottom: 0;
+  }
+  .top-sellers-img {
+    width: 368px;
+  }
+  .top-sellers-img-desktop {
+    width: 368px;
+  }
+  .top-sellers-desc-desktop {
+    width: 407px;
+  }
+}
