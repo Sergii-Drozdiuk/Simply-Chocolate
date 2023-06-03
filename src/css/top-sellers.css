@@ -48,6 +48,12 @@
   font-weight: 600;
   color: var(--light-color);
   margin: 0 auto;
+  transition: var(--transition-timings);
+}
+.sellers-btn:hover,
+.sellers-btn:focus {
+  background-color: #fcf1e0;
+  color: var(--brand-color);
 }
 /*
   |========================
