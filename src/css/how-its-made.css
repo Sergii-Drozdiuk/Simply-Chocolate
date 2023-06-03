@@ -5,14 +5,17 @@
 }
 .how-its-made-subject {
     text-align: center;
-    margin-bottom: 32px;
     font-weight: 600;
     font-size: 20;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #111111;
 }
-
+@media only screen and (max-width: 767px) {
+    .how-its-made-subject {
+        margin-bottom: 32px;
+    }
+}
 @media only screen and (min-width: 768px) {
     .how-its-made-subject {
         margin-bottom: 50px;
@@ -173,21 +176,19 @@
 @media only screen and (max-width: 767px) {
     .how-its-made-box {
         max-width: 335px;
-        padding: 0 14px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .how-its-made-box {
         max-width: 614px;
-        padding: 0 32px 0 32px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .how-its-made-box {
         max-width: 516px;
-        padding: 32px 32px 34px 0;
+        padding-top: 32px;
     }
 }
 
