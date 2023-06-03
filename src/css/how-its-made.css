@@ -162,9 +162,6 @@
     margin-bottom: 28px;
 }
 
-.how-its-made-item {
-    position: relative;
-}
 
 .how-its-made-item:not(:last-child) {
     margin-bottom: 18px;
@@ -177,6 +174,7 @@
 }
 
 .how-its-made-text {
+    padding-left: 16px;
     font-weight: 400;
     font-size: 14;
     line-height: 1.2;
@@ -185,9 +183,9 @@
 
 .how-its-made-text::before {
     content: '';
-    position: absolute;
+    position: relative;
     left: -16;
-    top: 3;
+    top: 13;
     display: block;
     width: 8px;
     height: 8px;
