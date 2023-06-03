@@ -8,20 +8,20 @@
   
   .our-products {
     padding: 32px 52px;
-    border: 1px solid rgba(17, 17, 17, 0.1);
+    border: 1px solid var(--dark-transparent);
     border-radius: 15px;
     max-width: 100%;
   
-    background-color: var(--white-color);
+    background-color: var(--light-color);
     text-align: center;
     cursor: pointer;
   
-    transition: border var(--duration) var(--time-function);
+    transition: border var(--transition-timings) var(--time-function);
   }
   
   .our-products:hover,
   .our-products:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--brand-color);
   }
   
   .our-products:hover .our-products-img,
@@ -31,20 +31,20 @@
   
   .our-products:hover .our-products-title,
   .our-products:focus .our-products-title {
-    color: var(--accent-color);
+    color: var(--brand-color);
   }
   
   .our-products:hover .our-products-btn,
   .our-products:focus .our-products-btn {
-    border: 1px solid var(--accent-color);
-    background-color: var(--accent-color);
-    color: var(--white-color);
+    border: 1px solid var(--brand-color);
+    background-color: var(--brand-color);
+    color: var(--light-color);
   }
   
   .our-products-img {
     margin-bottom: 8px;
   
-    transition: transform var(--duration) var(--time-function);
+    transition: transform var(--transition-timings) var(--time-function);
   }
   
   .our-products-title {
@@ -55,7 +55,7 @@
     font-size: 18px;
     line-height: 1.33;
   
-    transition: color var(--duration) var(--time-function);
+    transition: color var(--transition-timings) var(--time-function);
   }
   
   .our-products-text {
@@ -63,21 +63,21 @@
   
     font-size: 12px;
     line-height: 1.17;
-    color: rgba(17, 17, 17, 0.7);
+    color: var(--dark-semi-transparent);
   }
   
   .our-products-btn {
     min-width: 94px;
     padding: 8px 19px;
-    border: 1px solid rgba(17, 17, 17, 0.1);
+    border: 1px solid var(--dark-transparent);
     border-radius: 100px;
   
-    background-color: var(--primary-background-color);
+    background-color: var(--grey-color);
     font-weight: 600;
   
-    transition: background-color var(--duration) var(--time-function),
-      color var(--duration) var(--time-function),
-      border var(--duration) var(--time-function);
+    transition: background-color var(--transition-timings) var(--time-function),
+      color var(--transition-timings) var(--time-function),
+      border var(--transition-timings) var(--time-function);
   }
   
   .swiper-horizontal > .swiper-pagination-bullets,
@@ -101,23 +101,23 @@
   .swiper-pagination-bullet {
     width: 13px;
   
-    background: rgba(17, 17, 17, 0.1);
+    background: var(--dark-transparent);
     opacity: 1;
   }
   
   .swiper-pagination-bullet-active {
     width: 28px;
     border-radius: 20px;
-    background-color: var(--accent-color);
+    background-color: var(--brand-color);
   }
   
   @media screen and (min-width: 768px) {
-    .product {
+    .our-products {
       max-width: 270px;
       padding: 32px 20px;
     }
   
-    .product-swiper {
+    .our-products-swiper {
       padding-bottom: 45px;
     }
   }
