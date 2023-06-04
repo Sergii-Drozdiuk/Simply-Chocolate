@@ -193,3 +193,46 @@
   height: 0;
   border: 1px solid var(--brand-color);
 }
+
+/**
+  |============================
+  | Button to up
+  |============================
+*/
+
+.back-to-top {
+  background: var(--light-color);
+
+  border-radius: 50%;
+  position: fixed;
+  bottom: -50px;
+  padding: 10px 12px;
+  right: 50px;
+  cursor: pointer;
+  border: 1px solid var(--brand-color);
+  transition: 0.3s all;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  background: var(--light-transparent);
+}
+
+.back-to-top.active {
+  bottom: 50px;
+  transition: 0.3s all;
+}
+
+.back-to-top-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.back-to-top-icon {
+  transform: rotate(180deg);
+  fill: var(--brand-color);
+}
