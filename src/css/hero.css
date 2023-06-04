@@ -94,7 +94,7 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--light-color);
   margin: 0;
   margin-bottom: 32px;
 }
@@ -114,19 +114,19 @@
   cursor: pointer;
   padding: 12px 28px;
   border: transparent;
-  background: #fd9222;
+  background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--light-color);
   /* transition: background-color, color; */
 }
 .buy-now-btn:hover,
 .buy-now-btn:focus {
   background-color: transparent;
-  color: #fd9222;
+  color: var(--brand-color);
 }
 @media only screen and (max-width: 352px) {
   .buy-now-btn {
@@ -143,19 +143,19 @@
   padding: 12px 28px;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--light-color);
   border-radius: 100px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--light-color);
   /* transition: color, border-color; */
 }
 .hero-nav-link:hover,
 .hero-nav-link:focus {
-  border-color: #fd9222;
-  color: #fd9222;
+  border-color: var(--brand-color);
+  color: var(--brand-color);
 }
 @media only screen and (max-width: 352px) {
   .hero-nav-link {
@@ -173,12 +173,12 @@
   line-height: 1.17;
   text-decoration: none;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--light-color);
   /* transition: color; */
 }
 .hero-scroll-link:hover,
 .hero-scroll-link:focus {
-  color: #fd9222;
+  color: var(--brand-color);
 }
 @media only screen and (min-width: 768px) {
   .hero-scroll-link {
@@ -186,12 +186,13 @@
   }
 }
 .hero-skroll-icon {
-  background-color: white;
+  background-color: var(--light-color);
   border-radius: 50%;
-  fill: #fd9222;
+  fill: var(--brand-color);
   /* transition: background-color, fill; */
 }
-.hero-skroll-icon:hover {
-  background-color: #fd9222;
-  fill: #ffffff;
+.hero-skroll-icon:hover,
+.hero-skroll-icon:focus {
+  background-color: var(--brand-color);
+  fill: var(--light-color);
 }
