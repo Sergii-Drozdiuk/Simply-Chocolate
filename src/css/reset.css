@@ -40,19 +40,18 @@ p {
 
 .container {
   min-width: 300px;
-  max-width: 375px;
-  padding: 0 20px;
+  max-width: 365px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   .container {
-    padding: 0 32px;
-    max-width: 768px;
+    max-width: 734px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1166px;
   }
 }
 

@@ -3,14 +3,14 @@
 <header class="header">
   <div class="header-container container">
     <nav class="header-nav">
-      <a href="">
-        <ul class="header-logo">
+      <a class="header-logo-link" href="">
+        <ul class="header-logo-list">
           <li class="header-logo-text">
             <span class="header-logo-span">SIMPLY </span>CHOCOLATE
           </li>
           <li class="header-logo-picture">
             <svg class="header-logo-icon" width="21" height="21">
-              <use href=""></use>
+              <use href="./img/icons.svg#logo"></use>
             </svg>
           </li>
         </ul>
@@ -34,29 +34,32 @@
         </li>
       </ul>
 
-      <ul>
-        <li>
-          <a href="">
-            <svg class="" width="24" height="24">
-              <use href=""></use>
+      <ul class="header-socials-list">
+        <li class="header-socials-item">
+          <a class="header-socials-link" href="">
+            <svg class="header-socials-icon" width="24" height="24">
+              <use href="./img/icons.svg#instagram"></use>
             </svg>
           </a>
-          <svg class="" width="24" height="24">
-            <use href=""></use>
-          </svg>
         </li>
-        <li>
-          <a href="">
-            <svg class="" width="24" height="24">
-              <use href=""></use>
+        <li class="header-socials-item">
+          <a class="header-socials-link" href="">
+            <svg class="header-socials-icon" width="24" height="24">
+              <use href="./img/icons.svg#twitter"></use>
             </svg>
           </a>
         </li>
       </ul>
 
-      <button class="button burger-menu-btn" type="button">
+      <button
+        class="button burger-menu-btn js-open-modal"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-modal="2"
+        type="button"
+      >
         <svg class="burger-menu-icon" width="21" height="14">
-          <use href=""></use>
+          <use href="./img/icons.svg#menu-mobile"></use>
         </svg>
       </button>
     </nav>
@@ -65,10 +68,10 @@
 
 <!-- Mobile window -->
 
-<div class="mobile-menu-container">
-  <button class="button mobile-close-btn" type="button">
+<div class="mobile-menu-container js-overlay-modal" id="mobile-menu">
+  <button class="button mobile-close-btn js-modal-close" type="button">
     <svg class="mobile-close-icon" width="12" height="12">
-      <use href=""></use>
+      <use href="../img/icons.svg#icon-x"></use>
     </svg>
   </button>
 
@@ -94,16 +97,17 @@
     <li class="mobile-socials-item">
       <a class="mobile-socials-link" href="">
         <svg class="mobile-socials-icon" width="22" height="22">
-          <use href=""></use>
+          <use href="../img/icons.svg#instagram"></use>
         </svg>
       </a>
     </li>
     <li class="mobile-socials-item">
       <a class="mobile-socials-link" href="">
         <svg class="mobile-socials-icon" width="20" height="20">
-          <use href=""></use>
+          <use href="../img/icons.svg#twitter"></use>
         </svg>
       </a>
     </li>
   </ul>
 </div>
+<script src="../main.js"></script>

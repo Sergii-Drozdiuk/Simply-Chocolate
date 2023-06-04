@@ -18,16 +18,7 @@
 @import url('./vite-promo.css');
 
 :root {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-
-  color: #111111;
-  background: #e2e2e2;
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -52,4 +43,24 @@
 
 
 
+}
+
+html {
+ scroll-behavior: smooth;
+}
+body {
+font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  color: var(--main-color);
+  background: var(--light-color);
+}
+
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
 }

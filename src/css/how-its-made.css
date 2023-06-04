@@ -1,0 +1,261 @@
+.how-its-made-subject {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #111111;
+}
+
+@media only screen and (max-width: 767px) {
+    .how-its-made-subject {
+        margin-bottom: 32px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .how-its-made-subject {
+        margin-bottom: 50px;
+        font-size: 24;
+        line-height: 1.1;
+    }
+}
+
+.how-its-made-part {
+    color: #FD9222;
+}
+
+.how-its-made-container {
+    padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .how-its-made-container {
+        padding: 0 77px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .how-its-made-container {
+        display: flex;
+        column-gap: 20px;
+        padding: 0 32px;
+    }
+}
+
+.how-its-made-holder {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 614px;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .how-its-made-holder {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .how-its-made-holder {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(./img/how-its-made.img/image_mob@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .how-its-made-holder {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(./img/how-its-made.img/image_mob@2x.jpg);
+        }
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+    .how-its-made-holder {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(./img/how-its-made.img/image_tab@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .how-its-made-holder {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(./img/how-its-made.img/image_tab@2x.jpg);
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .how-its-made-holder {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(./img/how-its-made.img/image_desk@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .how-its-made-holder {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(./img/how-its-made.img/image_desk@2x.jpg);
+        }
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1199px) {
+    .how-its-made-holder {
+        margin-bottom: 20px;
+    }
+}
+
+.how-its-made-overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.how-its-made-overlay:hover .how-its-made-video,
+.how-its-made-overlay:focus .how-its-made-video {
+    transform: translate(0, 0);
+}
+
+.how-its-made-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+@media only screen and (min-width: 768px) {
+    .how-its-made-cont {
+        width: 44px;
+        height: 44px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .how-its-made-cont {
+        width: 35px;
+        height: 35px;
+    }
+}
+.how-its-made-cont:hover .how-its-made-video,
+.how-its-made-cont:focus .how-its-made-video {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.how-its-made-icon:hover,
+.how-its-made-icon:focus {
+    z-index: 0;
+}
+
+.how-its-made-icon {
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    fill: #FFFFFF;
+}
+@media only screen and (max-width: 767px) {
+    .how-its-made-icon {
+        width: 14px;
+        height: 15px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .how-its-made-icon {
+        width: 20px;
+        height: 21px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .how-its-made-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .how-its-made-box {
+        max-width: 335px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .how-its-made-box {
+        max-width: 614px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .how-its-made-box {
+        max-width: 516px;
+        padding-top: 25px;
+    }
+}
+
+.how-its-made-title {
+    font-weight: 600;
+    font-size: 18;
+    line-height: 1.3;
+    margin-bottom: 28px;
+}
+
+
+.how-its-made-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .how-its-made-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.how-its-made-text {
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 14;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.how-its-made-text::before {
+    content: '';
+    position: relative;
+    left: -16px;
+    top: 13px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4C4C4C;
+    border: 1px solid #ECEDED;
+    margin-right: 8px;
+}
+
+.how-its-made-video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 100%);
+    z-index: 2;
+}
