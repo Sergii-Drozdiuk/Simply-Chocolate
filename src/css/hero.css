@@ -1,0 +1,198 @@
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    padding-bottom: 72px;
+  }
+}
+.hero-container {
+  background-color: #1e1823;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 395px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(./img/herobg/herobgmobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(./img/herobg/herobgmobile@2x.jpg);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(./img/herobg/herobgtablet.jpg);
+    padding: 40px;
+    padding-top: 671px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(./img/herobg/herobgtablet@2x.jpg);
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(./img/herobg/herobgdesk.jpg);
+    padding: 40px;
+    padding-top: 381px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(./img/herobg/herobgdesk@2x.jpg);
+    }
+  }
+}
+
+.hero-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--light-color);
+  margin: 0;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-subtitle {
+    max-width: 484px;
+    font-size: 28px;
+  }
+}
+.hero-nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: baseline;
+}
+.buy-now-btn {
+  cursor: pointer;
+  padding: 12px 28px;
+  border: transparent;
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--light-color);
+  /* transition: background-color, color; */
+}
+.buy-now-btn:hover,
+.buy-now-btn:focus {
+  background-color: transparent;
+  color: var(--brand-color);
+}
+@media only screen and (max-width: 352px) {
+  .buy-now-btn {
+    padding: 12px 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .buy-now-btn {
+    margin-bottom: 32px;
+  }
+}
+.hero-nav-link {
+  display: flex;
+  padding: 12px 28px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--light-color);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--light-color);
+  /* transition: color, border-color; */
+}
+.hero-nav-link:hover,
+.hero-nav-link:focus {
+  border-color: var(--brand-color);
+  color: var(--brand-color);
+}
+@media only screen and (max-width: 352px) {
+  .hero-nav-link {
+    padding: 12px 20px;
+  }
+}
+.hero-scroll-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  color: var(--light-color);
+  /* transition: color; */
+}
+.hero-scroll-link:hover,
+.hero-scroll-link:focus {
+  color: var(--brand-color);
+}
+@media only screen and (min-width: 768px) {
+  .hero-scroll-link {
+    margin-left: auto;
+  }
+}
+.hero-skroll-icon {
+  background-color: var(--light-color);
+  border-radius: 50%;
+  fill: var(--brand-color);
+  /* transition: background-color, fill; */
+}
+.hero-skroll-icon:hover,
+.hero-skroll-icon:focus {
+  background-color: var(--brand-color);
+  fill: var(--light-color);
+}
