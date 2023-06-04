@@ -4,10 +4,10 @@
   padding: 32px 0;
 }
 
-.footer-contet {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+@media only screen and (min-width: 768px) {
+  .footer-section {
+    padding: 50px 0;
+  }
 }
 
 .footer-container {
@@ -15,12 +15,15 @@
   flex-direction: column;
 }
 
-.footer-contet {
+.footer-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 32px;
   margin-bottom: 32px;
 }
 
-.footer-contet::after {
+.footer-content::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -29,14 +32,39 @@
   border: 1px solid var(--light-more-transparent);
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    gap: 124px;
+    padding-bottom: 50px;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-content {
+    gap: 543px;
+    padding-bottom: 62px;
+  }
+}
+
 .footer-slogan {
   max-width: 300px;
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
+  letter-spacing: -0.02em;
 
   color: var(--light-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-slogan {
+    margin-bottom: 0;
+    font-size: 28px;
+    line-height: 1.21;
+  }
 }
 
 .footer-slogan-word {
@@ -48,17 +76,28 @@
   justify-content: space-between;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-outside-links {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-outside-links {
+    gap: 63px;
+  }
+}
+
 .footer-contacts {
   display: flex;
   flex-direction: column;
   gap: 14px;
-
   font-style: normal;
 }
 
 .footer-subtitle {
   font-weight: 500;
-
   color: var(--light-color);
 }
 
@@ -82,9 +121,23 @@
   gap: 14px;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-social-list {
+    gap: 18px;
+    align-items: flex-start;
+  }
+}
+
 .footer-social-list-item {
   width: 22px;
   height: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-social-list-item {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .footer-social-img {
@@ -109,6 +162,13 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 
 .footer-nav-link {
