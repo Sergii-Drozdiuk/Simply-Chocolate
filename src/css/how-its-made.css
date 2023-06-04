@@ -64,7 +64,7 @@
 @media only screen and (max-width: 375px) {
     .how-its-made-holder {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url(../images/image_mob@1x.jpg);
+            url(./images/image_mob@1x.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -72,7 +72,7 @@
     (min-resolution: 2dppx) {
         .how-its-made-holder {
             background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url(../images/image_mob@2x.jpg);
+                url(./images/image_mob@2x.jpg);
         }
     }
 }
@@ -80,7 +80,7 @@
 @media only screen and (min-width: 376px) and (max-width: 768px) {
     .how-its-made-holder {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url(../images/image_tab@1x.jpg);
+            url(./images/image_tab@1x.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -88,7 +88,7 @@
     (min-resolution: 2dppx) {
         .how-its-made-holder {
             background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url(../images/image_tab@2x.jpg);
+                url(./images/image_tab@2x.jpg);
         }
     }
 }
@@ -96,7 +96,7 @@
 @media only screen and (min-width: 769px) {
     .how-its-made-holder {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url(../images/image_desk@1x.jpg);
+            url(./images/image_desk@1x.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -104,7 +104,7 @@
     (min-resolution: 2dppx) {
         .how-its-made-holder {
             background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url(../images/image_desk@2x.jpg);
+                url(./images/image_desk@2x.jpg);
         }
     }
 }
