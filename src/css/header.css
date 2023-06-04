@@ -99,10 +99,22 @@
 /* Mobile window */
 
 .mobile-menu-container {
+  position: relative;
   width: 220px;
   height: 100vh;
   background-color: var(--secondary-color);
 }
+.mobile-close-btn {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.mobile-close-icon {
+  stroke: var(--light-color);
+}
+
 @media only screen and (min-width: 1200px) {
   .mobile-menu-container {
     display: none;
@@ -128,6 +140,7 @@
 .mobile-socials-list {
   display: flex;
   margin-left: 20px;
+  margin-bottom: 20px;
   gap: 18px;
 }
 .mobile-socials-icon {
