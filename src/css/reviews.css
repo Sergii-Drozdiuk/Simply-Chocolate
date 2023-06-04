@@ -1,0 +1,143 @@
+.decoraion-reviews-title {
+  color: var(--brand-color);
+}
+.reviews-list {
+  margin-top: 91px;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-list {
+    margin-bottom: 50px;
+  }
+}
+.reviews-item {
+  min-height: 200px;
+  max-width: 360px;
+  background: var(--light-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 26px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-item {
+    margin-bottom: 31px;
+  }
+}
+.photo-user {
+  position: absolute;
+  top: -40px;
+  border-radius: 50%;
+  z-index: 50;
+}
+.owl-carousel .owl-stage-outer {
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+.owl-carousel .owl-item img {
+  width: 80px;
+}
+.reviews-user {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-top: 56px;
+  margin-bottom: 24px;
+  color: #111111;
+}
+
+.reviews-text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: rgba(17, 17, 17, 0.7);
+}
+.reviews-btn {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #111111;
+  padding: 14px 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid var(--brand-color);
+  border-radius: 100px;
+  background: transparent;
+  min-width: 222px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.reviews-btn span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #fd9222;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+.reviews-btn span:nth-child(6) {
+  position: relative;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reviews-btn span:nth-child(1) {
+  transform: translate(-3.3em, -5em);
+}
+.reviews-btn span:nth-child(2) {
+  transform: translate(-6em, 2.3em);
+}
+.reviews-btn span:nth-child(3) {
+  transform: translate(-0.2em, 1.8em);
+}
+.reviews-btn span:nth-child(4) {
+  transform: translate(3.5em, 2.4em);
+}
+.reviews-btn span:nth-child(5) {
+  transform: translate(3.5em, -4.8em);
+}
+.reviews-btn:hover,
+.reviews-btn:focus .text {
+  color: #fff;
+}
+.reviews-btn:hover span:not(:nth-child(6)),
+.reviews-btn:focus span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+.owl-stage {
+  display: flex;
+}
+.owl-nav {
+  display: none;
+}
+.owl-carousel .owl-dots.disabled {
+  display: block;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: var(--brand-color);
+  width: 28px;
+  height: 13px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 13px;
+  height: 13px;
+}
+.owl-carousel.owl-drag .owl-item {
+  max-width: 360px;
+}
