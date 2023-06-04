@@ -26,50 +26,34 @@
 })(window.Element.prototype);
 
 document.addEventListener('DOMContentLoaded', function () {
-  /*
-      |========================
-      | For Denys and Olexandr
-      |========================
-    */
+  /* Записываем в переменные массив элементов-кнопок и подложку.
+      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
   var modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close');
-  /*
-      |========================
-      | For Andriy
-      |========================
-    */
-  (modalButtons = document.querySelectorAll('.js-open-modal-1')),
-    (overlay = document.querySelector('.js-overlay-modal-1')),
-    (closeButtons = document.querySelectorAll('.js-modal-close-1'));
-  /*
-      |========================
-      | For Valentin
-      |========================
-    */
-  (modalButtons = document.querySelectorAll('.js-open-modal-2')),
-    (overlay = document.querySelector('.js-overlay-modal-2')),
-    (closeButtons = document.querySelectorAll('.js-modal-close-2'));
-  /*
-      |========================
-      | For Denys
-      |========================
-    */
-  (modalButtons = document.querySelectorAll('.js-open-modal-3')),
-    (overlay = document.querySelector('.js-overlay-modal-3')),
-    (closeButtons = document.querySelectorAll('.js-modal-close-3'));
 
+  /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
+    /* Назначаем каждой кнопке обработчик клика */
     item.addEventListener('click', function (e) {
+      /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+            Нужно подстраховаться. */
       e.preventDefault();
+
+      /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+            и будем искать модальное окно с таким же атрибутом. */
       var modalId = this.getAttribute('data-modal'),
         modalElem = document.querySelector(
           '.modal[data-modal="' + modalId + '"]'
         );
+
+      /* После того как нашли нужное модальное окно, добавим классы
+            подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
-    });
-  });
+    }); // end click
+  }); // end foreach
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
@@ -78,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
     });
-  });
+  }); // end foreach
 
   document.body.addEventListener(
     'keyup',
@@ -97,4 +81,4 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
   });
-});
+}); // end ready
