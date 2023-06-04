@@ -217,7 +217,6 @@
     margin-bottom: 28px;
 }
 
-.how-its-made-item {}
 
 .how-its-made-item:not(:last-child) {
     margin-bottom: 18px;
