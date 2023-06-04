@@ -114,6 +114,7 @@
   align-items: baseline;
 }
 .buy-now-btn {
+  display: block;
   cursor: pointer;
   padding: 12px 28px;
   border: transparent;
@@ -124,7 +125,49 @@
   font-size: 14px;
   line-height: 1.2;
   color: var(--light-color);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-timings);
   /* transition: background-color, color; */
+}
+.buy-now-btn span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+.buy-now-btn span:nth-child(6) {
+  position: relative;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buy-now-btn span:nth-child(1) {
+  transform: translate(-3.3em, -5em);
+}
+.buy-now-btn span:nth-child(2) {
+  transform: translate(-6em, 2.3em);
+}
+.buy-now-btn span:nth-child(3) {
+  transform: translate(-0.2em, 1.8em);
+}
+.buy-now-btn span:nth-child(4) {
+  transform: translate(3.5em, 2.4em);
+}
+.buy-now-btn span:nth-child(5) {
+  transform: translate(3.5em, -4.8em);
+}
+/* .buy-now-btn:hover,
+.buy-now-btn:focus .text {
+  color: var(--brand-color);
+} */
+.buy-now-btn:hover span:not(:nth-child(6)),
+.buy-now-btn:focus span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
 }
 .buy-now-btn:hover,
 .buy-now-btn:focus {
@@ -160,6 +203,7 @@
   border-color: var(--brand-color);
   color: var(--brand-color);
 }
+
 @media only screen and (max-width: 352px) {
   .hero-nav-link {
     padding: 12px 20px;
