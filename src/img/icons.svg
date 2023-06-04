@@ -70,8 +70,5 @@
     <symbol id="triangle" viewBox="0 0 30 32">
       <path d="M0 32v-32l30.476 16-30.476 16z"></path>
     </symbol>
-    <symbol id="icon-how-made" viewBox="0 0 30 32">
-   <path fill="#f5f4f4" style="fill: var(--color1, #f5f4f4)" d="M0 32v-32l30.476 16-30.476 16z"></path>
-   </symbol>
   </defs>
 </svg>
