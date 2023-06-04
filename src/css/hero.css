@@ -1,8 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 @media only screen and (min-width: 768px) {
   .hero-section {
     padding-bottom: 50px;
@@ -14,8 +9,6 @@
   }
 }
 .hero-container {
-  /* width: 335px; */
-  /* height: 621px; */
   background-color: #1e1823;
   margin-left: auto;
   margin-right: auto;
@@ -119,8 +112,6 @@
 }
 .buy-now-btn {
   cursor: pointer;
-  /* width: 120px; */
-  /* height: 41px; */
   padding: 12px 28px;
   border: transparent;
   background: #fd9222;
@@ -149,8 +140,6 @@
 }
 .hero-nav-link {
   display: flex;
-  /* width: 159px; */
-  /* height: 41px; */
   padding: 12px 28px;
   align-items: center;
   justify-content: center;
