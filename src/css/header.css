@@ -1,6 +1,11 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
   padding-top: 20px;
   padding-bottom: 14px;
+  background-color: var(--grey-color);
 }
 .header-container {
   padding-left: 0;
@@ -43,7 +48,11 @@
   gap: 18px;
 }
 .header-socials-icon {
-  :transparent ;
+  stroke: var(--main-color);
+  fill: transparent;
+}
+.header-socials-icon:hover {
+  stroke: var(--brand-color);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -62,7 +71,7 @@
 }
 
 .burger-menu-icon {
-  stroke: black;
+  stroke: var(--main-color);
 }
 @media only screen and (min-width: 768px) {
   .burger-menu-icon {
@@ -85,4 +94,46 @@
   .burger-menu-btn {
     display: none;
   }
+}
+
+/* Mobile window */
+
+.mobile-menu-container {
+  width: 220px;
+  height: 100vh;
+  background-color: var(--secondary-color);
+}
+@media only screen and (min-width: 1200px) {
+  .mobile-menu-container {
+    display: none;
+  }
+}
+
+.mobile-nav-list {
+  margin-top: 136px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: var(--light-color);
+}
+
+.mobile-socials-list {
+  display: flex;
+  margin-left: 20px;
+  gap: 18px;
+}
+.mobile-socials-icon {
+  stroke: var(--light-color);
+  fill: currentColor;
+}
+.mobile-socials-icon:hover {
+  stroke: var(--brand-color);
 }
