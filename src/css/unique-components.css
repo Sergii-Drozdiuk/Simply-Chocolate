@@ -1,20 +1,7 @@
-.unique-components-section {
-}
-.section {
-}
-.unique-section-container {
-}
-.container {
-}
-
-
 .unique-components-text {
     margin-bottom: 32px;
 }
 
-.unique-components-card-text {
-    
-}
 @media only screen and (min-width: 768px) {
   .unique-components-text {
     max-width: 486px;
@@ -55,11 +42,6 @@
     gap: 19px;
   }
 }
-.list {
-}
-.unique-components-item {
-    
-}
 
 @media only screen and (min-width: 768px) {
   .unique-components-item {
@@ -90,22 +72,19 @@
       flex-basis: calc((100% - 57px)/4);
     }
   }
-.item {
-}
+
 .unique-components-img {
-    margin: 0 auto;
     margin-bottom: 25px;
 }
-.img {
-}
-
 
 .unique-components-btn {
   padding: 6px 16px;
   border-radius: 35px;
+  
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
+
   color: var(--light-color);
   background-color: var(--brand-color);
   border: 1px solid var(--brand-color);
@@ -120,8 +99,6 @@
   gap: 6px;
   margin-bottom: 14px;
 }
-.button {
-}
  
 .container-card{
   perspective: 500px; 
@@ -131,10 +108,9 @@
 }
 .card {
   position: relative;
+  
   transition: transform 500ms;
   transform-style: preserve-3d;
-
-  
 }
 
 .front-card ,
@@ -149,14 +125,9 @@
   justify-content: center;
   flex-direction: column;
 
-  /* padding-top: 28px;
-  padding-bottom: 28px;
-  padding-right: 58px;
-  padding-left: 28px; */
-
   background-color: var(--brand-color);
   border-radius: 15px;
-  border: 1px solid transperent;
+  border: 1px solid transparent;
 }
 
 .light-bg {
@@ -180,19 +151,18 @@
 }
 
 .back-card {
-  padding: 28px;
-  background-color: var(--light-color);
-  border-radius: 15px;
-
-  height: 270px;
-  overflow-x: scroll;
-  
   position: absolute; 
   left: 0;
   top: 0;
 
- transform: rotateY(180deg); 
+  height: 270px;
+  padding: 28px;
+  border-radius: 15px;
+
+  overflow-x: scroll;
+    transform: rotateY(180deg); 
    
+  background-color: var(--light-color);
 }
 
 .back-card-title{
