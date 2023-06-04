@@ -1,0 +1,91 @@
+.subscribe-section {
+  background-color: #1e1823;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/subscribe-bg/img-desktop.webp);
+  padding: 72px 0;
+  max-width: 1200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+.subscribe-title {
+  font-size: 24px;
+  line-height: 1.17;
+  margin: 0 auto;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  width: 378px;
+  margin-bottom: 24px;
+}
+.subscribe-desc {
+  text-align: center;
+  margin: 0 auto;
+  width: 467px;
+  color: var(--light-color);
+  margin-bottom: 24px;
+}
+.subscribe-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 40px;
+  background: var(--brand-color);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--light-color);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-timings);
+}
+.subscribe-btn span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #fcf1e0;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+.subscribe-btn span:nth-child(6) {
+  position: relative;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn span:nth-child(1) {
+  transform: translate(-3.3em, -5em);
+}
+.subscribe-btn span:nth-child(2) {
+  transform: translate(-6em, 2.3em);
+}
+.subscribe-btn span:nth-child(3) {
+  transform: translate(-0.2em, 1.8em);
+}
+.subscribe-btn span:nth-child(4) {
+  transform: translate(3.5em, 2.4em);
+}
+.subscribe-btn span:nth-child(5) {
+  transform: translate(3.5em, -4.8em);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus .text {
+  color: var(--brand-color);
+}
+.subscribe-btn:hover span:not(:nth-child(6)),
+.subscribe-btn:focus span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4.3);
+  transition: 1.5s ease;
+}
+@media only screen and (max-width: 767px) {
+  .subscribe-section {
+    padding: 54px 0;
+  }
+  .subscribe-title {
+    width: 291px;
+  }
+  .subscribe-desc {
+    width: 326px;
+  }
+}

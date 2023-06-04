@@ -88,7 +88,7 @@
 }
 .top-sellers-btn:hover span:not(:nth-child(6)),
 .top-sellers-btn:focus span:not(:nth-child(6)) {
-  transform: translate(-50%, -50%) scale(4);
+  transform: translate(-50%, -50%) scale(4.1);
   transition: 1.5s ease;
 }
 /*
@@ -177,7 +177,7 @@
   }
   .top-sellers-btn-desktop:hover span:not(:nth-child(6)),
   .top-sellers-btn-desktop:focus span:not(:nth-child(6)) {
-    transform: translate(-50%, -50%) scale(4);
+    transform: translate(-50%, -50%) scale(4.1);
     transition: 1.5s ease;
   }
   .top-sellers-img {
