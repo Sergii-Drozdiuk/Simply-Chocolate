@@ -3,7 +3,16 @@
 *::after {
   box-sizing: border-box;
 }
-
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    padding-bottom: 72px;
+  }
+}
 .hero-container {
   /* width: 335px; */
   /* height: 621px; */
@@ -86,19 +95,7 @@
     }
   }
 }
-/* приховування заголовка */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 .hero-subtitle {
   font-weight: 500;
   font-size: 20px;
