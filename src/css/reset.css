@@ -24,7 +24,7 @@ p {
   overflow: hidden;
 }
 
-.section {
+section {
   padding-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
@@ -55,15 +55,13 @@ p {
   }
 }
 
-ul,
-.list {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-a,
-.link {
+a {
   color: currentColor;
   text-decoration: none;
 }
