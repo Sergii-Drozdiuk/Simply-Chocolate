@@ -286,6 +286,7 @@
           min="100"
           max="900"
         />
+        <span class="validity"></span>
         <label for="gr" class="number-gram">g</label>
       </div>
     </li>
@@ -347,14 +348,16 @@
       </picture>
       <div class="number-container">
         <input
+          required
           id="gr"
           type="number"
           class="modal-gram-container"
           value="200"
           step="10"
-          min="200"
+          min="100"
           max="900"
         />
+        <span class="validity"></span>
         <label for="gr" class="number-gram">g</label>
       </div>
     </li>
@@ -416,14 +419,16 @@
       </picture>
       <div class="number-container">
         <input
+          required
           id="gr"
           type="number"
           class="modal-gram-container"
           value="300"
           step="10"
-          min="300"
+          min="100"
           max="900"
         />
+        <span class="validity"></span>
         <label for="gr" class="number-gram">g</label>
       </div>
     </li>
@@ -438,8 +443,9 @@
         id="pi"
         required
         spellcheck="true"
-        pattern="[A-Za-z]{1,32}"
+        pattern="[A-Za-z]{1,255}"
         placeholder="Name"
+        maxlength="32"
       />
       <input
         name="user_surname"
@@ -448,8 +454,9 @@
         id="pi"
         required
         spellcheck="true"
-        pattern="[A-Za-z]{1,32}"
+        pattern="[A-Za-z]{1,255}"
         placeholder="Surname"
+        maxlength="32"
       />
     </div>
     <div class="modal-container">
@@ -476,7 +483,7 @@
             required
             spellcheck="true"
             placeholder="Phone number"
-            pattern="789][0-9]{9}"
+            pattern="[7-9]{1}[0-9]{8}"
           />
           <svg class="phone-icon" width="32" height="32">
             <use href="./img/icons.svg#flag"></use>
@@ -513,10 +520,7 @@
         name="user_comment"
       ></textarea>
     </div>
-    <button
-      type="button"
-      class="top-sellers-btn-desktop button js-modal-close btn-modal"
-    >
+    <button type="submit" class="top-sellers-btn-desktop button btn-modal">
       <span></span>
       <span></span>
       <span></span>
@@ -527,4 +531,3 @@
   </form>
 </div>
 <div class="overlay" id="overlay-modal"></div>
-<script src="../js/scroll.js"></script>

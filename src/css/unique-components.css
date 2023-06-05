@@ -102,11 +102,12 @@
 
   color: var(--light-color);
   background-color: var(--brand-color);
-  border: 1px solid var(--brand-color);
+  
 }
 .unique-components-btn:nth-child(2n){
   color: var(--main-color);
-  background-color: var(--light-color);
+  background-color: var(--grey-color);
+  border: 1px solid var(--brand-color);
 }
 
 .card-btn-container{
@@ -152,7 +153,7 @@
 
 .dark-bg{
     background-color: var(--secondary-color);
-    border: 1px solid var(--brand-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .unique-components-subtitle ,
@@ -176,8 +177,8 @@
   padding: 28px;
   border-radius: 15px;
 
-  overflow-x: scroll;
-    transform: rotateY(180deg); 
+  overflow: auto;
+  transform: rotateY(180deg); 
    
   background-color: var(--light-color);
 }
@@ -185,5 +186,8 @@
 .back-card-title{
   text-align: start;
   margin-bottom: 8px;
+
+  font-size: 18px;
+  line-height: 1.2;
 }
 

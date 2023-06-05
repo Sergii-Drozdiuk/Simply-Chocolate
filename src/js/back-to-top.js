@@ -11,4 +11,3 @@ $(window).scroll(function() { // Отслеживаем начало прокр�
         $('.back-to-top').removeClass('active');
     }
 });
-JavaScript

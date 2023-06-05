@@ -109,11 +109,27 @@
 
 .footer-contacts-link {
   color: var(--light-color);
+
+  background: linear-gradient(
+    to right,
+    var(--brand-color),
+    var(--brand-color) 50%,
+    var(--light-color) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+
+  transition: background-position 500ms ease-in-out;
 }
 
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--brand-color);
+
+  background-position: 0 100%;
 }
 
 .footer-social-list {
@@ -152,6 +168,8 @@
 .footer-socilal-icon {
   stroke: var(--light-color);
   fill: currentColor;
+
+  transition: stroke var(--transition-timings);
 }
 
 .footer-socilal-icon:hover {
@@ -177,21 +195,26 @@
   line-height: 1.14;
   padding-bottom: 8px;
   color: var(--light-color);
+
+  background: linear-gradient(
+    to right,
+    var(--brand-color),
+    var(--brand-color) 50%,
+    var(--light-color) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+
+  transition: background-position 500ms ease-in-out;
 }
 
 .footer-nav-link:hover {
-  font-weight: 600;
   color: var(--brand-color);
-}
 
-.footer-nav-link:hover::after {
-  content: '';
-  position: absolute;
-  display: block;
-  bottom: 0;
-  width: 24px;
-  height: 0;
-  border: 1px solid var(--brand-color);
+  background-position: 0 100%;
 }
 
 /**
@@ -201,13 +224,14 @@
 */
 
 .back-to-top {
-  background: var(--light-color);
+  background: transparent;
 
   border-radius: 50%;
   position: fixed;
+  z-index: 1000;
   bottom: -50px;
-  padding: 10px 12px;
-  right: 50px;
+  padding: 6px;
+  right: 0;
   cursor: pointer;
   border: 1px solid var(--brand-color);
   transition: 0.3s all;
@@ -235,4 +259,15 @@
 .back-to-top-icon {
   transform: rotate(180deg);
   fill: var(--brand-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .back-to-top {
+    padding: 8px;
+  }
+
+  .back-to-top-icon {
+    width: 22px;
+    height: 22px;
+  }
 }

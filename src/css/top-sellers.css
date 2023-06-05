@@ -241,6 +241,8 @@
   width: 100vw;
   height: 100vh;
   backdrop-filter: blur(7px) brightness(0.86) grayscale(28%) opacity(92%);
+  -webkit-backdrop-filter: blur(7px) brightness(0.86) grayscale(28%)
+    opacity(92%);
   z-index: 1000;
   transition: 0.3s all;
 }
@@ -259,7 +261,8 @@
 .modal-icon {
   transition: stroke 250ms ease-in-out;
 }
-.modal-icon:hover {
+.modal-icon:hover,
+.modal-icon:focus {
   stroke: var(--brand-color);
 }
 .modal-title {
@@ -293,7 +296,7 @@
   height: 196px;
 }
 .modal-gram-container {
-  padding: 8px 10px 8px 28px;
+  padding: 8px 10px 8px 31px;
   width: 96px;
   height: 33px;
   background: var(--grey-color);
@@ -386,9 +389,21 @@
 .number-container {
   position: relative;
 }
+.modal-gram-container:focus ~ .number-gram {
+  display: none;
+}
+.modal-gram-container:invalid + span::after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+.modal-gram-container:valid + span::after {
+  content: '✓';
+  padding-left: 5px;
+}
 .number-gram {
   top: 8px;
-  left: 58px;
+  left: 63px;
   position: absolute;
   font-weight: 600;
 }
@@ -418,7 +433,8 @@
 }
 @media only screen and (max-width: 767px) {
   .modal {
-    width: 90%;
+    height: 90%;
+    width: 83%;
     padding: 32px 24px;
   }
   .modal-img-list {
