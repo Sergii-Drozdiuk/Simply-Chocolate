@@ -216,7 +216,7 @@
 </section>
 <div class="modal" data-modal="1">
   <svg class="modal-icon modal__cross js-modal-close" width="28" height="28">
-    <use href="../img/icons.svg#icon-x"></use>
+    <use href="./img/icons.svg#icon-x"></use>
   </svg>
   <h2 class="modal-title"><span class="modal-title-span">BUY</span> NOW</h2>
   <ul class="modal-img-list">
@@ -271,6 +271,7 @@
           type="image/png"
         />
         <img
+          class="modal-img"
           src="./img/top-sellers/img-1-modal.png"
           alt="Choose your product"
         />
@@ -339,6 +340,7 @@
           type="image/png"
         />
         <img
+          class="modal-img"
           src="./img/top-sellers/img-2-modal.png"
           alt="Choose your product"
         />
@@ -407,6 +409,7 @@
           type="image/png"
         />
         <img
+          class="modal-img"
           src="./img/top-sellers/img-3-modal.png"
           alt="Choose your product"
         />
@@ -429,6 +432,7 @@
     <div class="modal-container">
       <label for="pi" class="label">Personal information</label>
       <input
+        name="user_name"
         class="pi-first-input"
         type="text"
         id="pi"
@@ -438,6 +442,7 @@
         placeholder="Name"
       />
       <input
+        name="user_surname"
         class="pi-second-input"
         type="text"
         id="pi"
@@ -450,6 +455,7 @@
     <div class="modal-container">
       <label for="email" class="label">Email</label>
       <input
+        name="user_email"
         type="email"
         id="email"
         class="input-email"
@@ -464,6 +470,7 @@
         <span class="label">Phone number</span>
         <span class="input-tel-container">
           <input
+            name="user_tel"
             type="tel"
             class="input-number"
             required
@@ -483,6 +490,7 @@
         <span class="label">Card number</span>
         <span class="input-card-container">
           <input
+            name="user_card"
             type="text"
             id="card"
             class="input-card"
@@ -498,8 +506,25 @@
     </div>
     <div class="modal-container">
       <label for="ta" class="label">Comment</label>
-      <textarea id="ta" class="ta" placeholder="Enter text"></textarea>
+      <textarea
+        id="ta"
+        class="ta"
+        placeholder="Enter text"
+        name="user_comment"
+      ></textarea>
     </div>
+    <button
+      type="button"
+      class="top-sellers-btn-desktop button js-modal-close btn-modal"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="text">Submit</span>
+    </button>
   </form>
 </div>
 <div class="overlay" id="overlay-modal"></div>
+<script src="../js/scroll.js"></script>

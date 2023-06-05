@@ -88,7 +88,7 @@
 }
 .top-sellers-btn:hover span:not(:nth-child(6)),
 .top-sellers-btn:focus span:not(:nth-child(6)) {
-  transform: translate(-50%, -50%) scale(4);
+  transform: translate(-50%, -50%) scale(4.1);
   transition: 1.5s ease;
 }
 /*
@@ -177,7 +177,7 @@
   }
   .top-sellers-btn-desktop:hover span:not(:nth-child(6)),
   .top-sellers-btn-desktop:focus span:not(:nth-child(6)) {
-    transform: translate(-50%, -50%) scale(4);
+    transform: translate(-50%, -50%) scale(4.1);
     transition: 1.5s ease;
   }
   .top-sellers-img {
@@ -216,10 +216,11 @@
   |========================
 */
 .modal {
+  height: 100vh;
+  overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
   width: 609px;
-  min-height: min-content;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -254,6 +255,12 @@
   right: 24px;
   position: absolute;
   stroke: var(--main-color);
+}
+.modal-icon {
+  transition: stroke 250ms ease-in-out;
+}
+.modal-icon:hover {
+  stroke: var(--brand-color);
 }
 .modal-title {
   font-weight: 600;
@@ -351,7 +358,7 @@
   position: absolute;
 }
 .input-number {
-  padding: 24px 24px 24px 177px;
+  padding: 17px 21px 21px 177px;
   height: 66px;
   width: 100%;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -408,4 +415,140 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
   resize: none;
+}
+@media only screen and (max-width: 767px) {
+  .modal {
+    width: 90%;
+    padding: 32px 24px;
+  }
+  .modal-img-list {
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  .modal-img-list-item {
+    padding: 8px 16px;
+    width: 263px;
+    height: 85px;
+    flex-direction: row;
+  }
+  .modal-img {
+    margin-right: auto;
+    width: 84px;
+    height: 69px;
+  }
+  .number-container {
+    margin-left: auto;
+  }
+  .modal-gram-container {
+    padding: 6px 10px 6px 16px;
+    width: 70px;
+    height: 29px;
+  }
+  .number-gram {
+    top: 5px;
+    left: 47px;
+  }
+  .modal-icon {
+    top: 14px;
+    right: 14px;
+  }
+  .pi-first-input {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  .pi-second-input {
+    width: 100%;
+  }
+  .input-number {
+    padding-left: 122px;
+  }
+  .phone-icon {
+    top: -4px;
+    width: 24px;
+    height: 24px;
+  }
+  .card-icon {
+    width: 24px;
+    height: 24px;
+    top: -5px;
+  }
+  .phone-number {
+    left: 60px;
+    top: -1px;
+    font-size: 14px;
+  }
+  .phone-number::after {
+    top: -7px;
+    left: 45px;
+  }
+  .label {
+    font-size: 12px;
+  }
+  .pi-first-input::placeholder,
+  .pi-second-input::placeholder,
+  .input-email::placeholder,
+  .input-number::placeholder,
+  .input-card::placeholder,
+  .ta::placeholder {
+    font-size: 14px;
+    line-height: 1.17;
+  }
+  .pi-first-input,
+  .pi-second-input,
+  .input-card,
+  .input-email,
+  .ta {
+    padding: 14px 18px;
+  }
+  .btn-modal {
+    padding: 12px 28px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--light-color);
+    background: #fd9222;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-modal span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #fcf1e0;
+    border-radius: 50%;
+    transition: 0.6s ease;
+  }
+  .btn-modal span:nth-child(6) {
+    position: relative;
+    transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-modal span:nth-child(1) {
+    transform: translate(-3.3em, -5em);
+  }
+  .btn-modal span:nth-child(2) {
+    transform: translate(-6em, 2.3em);
+  }
+  .btn-modal span:nth-child(3) {
+    transform: translate(-0.2em, 1.8em);
+  }
+  .btn-modal span:nth-child(4) {
+    transform: translate(3.5em, 2.4em);
+  }
+  .btn-modal span:nth-child(5) {
+    transform: translate(3.5em, -4.8em);
+  }
+  .btn-modal:hover,
+  .btn-modal:focus .text {
+    color: var(--brand-color);
+  }
+  .btn-modal:hover span:not(:nth-child(6)),
+  .btn-modal:focus span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4.1);
+    transition: 1.5s ease;
+  }
 }
