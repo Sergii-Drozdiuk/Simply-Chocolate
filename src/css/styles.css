@@ -22,7 +22,6 @@
 @import url('./vite-promo.css');
 
 :root {
-  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,39 +32,29 @@
   --secondary-color: #1e1823;
   --brand-color: #fd9222;
   --light-color: #ffffff;
-  --light-more-transparent:rgba(255, 255, 255, 0.1);
+  --light-more-transparent: rgba(255, 255, 255, 0.1);
   --light-transparent: rgba(255, 255, 255, 0.5);
-  --light-semi-transparent: color: rgba(255, 255, 255, 0.7);
+  --light-semi-transparent: rgba(255, 255, 255, 0.7);
   --dark-transparent: rgba(17, 17, 17, 0.1);
   --dark-semi-transparent: rgba(17, 17, 17, 0.7);
   --grey-color: #fafafa;
   --grey-transparent-color: rgba(64, 64, 64, 0.3);
   --border-color: rgba(17, 17, 17, 0.05);
-  --modal-bg: #E2E2E2;
-
+  --modal-bg: #e2e2e2;
   --transition-timings: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
 }
 
 html {
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-
   color: var(--main-color);
   background: var(--grey-color);
-}
-
-body.modal-open {
-  height: 100vh;
-  overflow-y: hidden;
 }
