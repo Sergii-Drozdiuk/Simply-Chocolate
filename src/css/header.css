@@ -49,7 +49,7 @@
 }
 .header-socials-icon {
   stroke: var(--main-color);
-  fill: transparent;
+  fill: var(--grey-color);
 }
 .header-socials-icon:hover {
   stroke: var(--brand-color);
@@ -99,11 +99,25 @@
 /* Mobile window */
 
 .mobile-menu-container {
-  position: relative;
+  padding-top: 136px;
+  padding-left: 50px;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  right: 0;
   width: 220px;
   height: 100vh;
+  z-index: 101;
   background-color: var(--secondary-color);
 }
+@media only screen and (min-width: 768px) {
+  .mobile-menu-container {
+    padding-top: 156px;
+    padding-left: 85px;
+    width: 290px;
+  }
+}
+
 .mobile-close-btn {
   width: 28px;
   height: 28px;
@@ -122,8 +136,6 @@
 }
 
 .mobile-nav-list {
-  margin-top: 136px;
-  margin-left: 50px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -136,12 +148,22 @@
   letter-spacing: -0.02em;
   color: var(--light-color);
 }
+.mobile-nav-link:hover {
+  color: var(--brand-color);
+}
 
 .mobile-socials-list {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
   display: flex;
-  margin-left: 20px;
-  margin-bottom: 20px;
   gap: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .mobile-socials-list {
+    left: 32px;
+    bottom: 24px;
+  }
 }
 .mobile-socials-icon {
   stroke: var(--light-color);
