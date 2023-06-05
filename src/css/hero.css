@@ -1,3 +1,8 @@
+/**
+  |============================
+  | hero styles
+  |============================
+*/
 .hero-section {
   padding-top: 80px;
 }
@@ -131,6 +136,11 @@
   transition: var(--transition-timings);
   /* transition: background-color, color; */
 }
+/**
+  |============================
+  | animation for buy now
+  |============================
+*/
 .buy-now-btn span:not(:nth-child(6)) {
   position: absolute;
   left: 50%;
@@ -142,6 +152,7 @@
   border-radius: 50%;
   transition: 0.6s ease;
 }
+
 .buy-now-btn span:nth-child(6) {
   position: relative;
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -161,20 +172,25 @@
 .buy-now-btn span:nth-child(5) {
   transform: translate(3.5em, -4.8em);
 }
-/* .buy-now-btn:hover,
+.buy-now-btn:hover,
 .buy-now-btn:focus .text {
   color: var(--brand-color);
-} */
+}
 .buy-now-btn:hover span:not(:nth-child(6)),
 .buy-now-btn:focus span:not(:nth-child(6)) {
   transform: translate(-50%, -50%) scale(4.1);
   transition: 1.5s ease;
 }
-.buy-now-btn:hover,
+/* .buy-now-btn:hover,
 .buy-now-btn:focus {
   background-color: transparent;
   color: var(--brand-color);
-}
+} */
+/**
+  |============================
+  | end animation buy now
+  |============================
+*/
 @media only screen and (max-width: 352px) {
   .buy-now-btn {
     padding: 12px 20px;
@@ -197,14 +213,77 @@
   line-height: 1.2;
   text-decoration: none;
   color: var(--light-color);
-  /* transition: color, border-color; */
+
+  /* animation */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
 }
 .hero-nav-link:hover,
 .hero-nav-link:focus {
   border-color: var(--brand-color);
   color: var(--brand-color);
 }
+/**
+  |============================
+  | animation for how its made
+  |============================
+*/
 
+span {
+  position: relative;
+  z-index: 1;
+  line-height: 24px;
+  transition: 0.3s ease;
+}
+.hero-nav-link:hover span {
+  color: #fd9222;
+}
+.btnBefore,
+.btnAfter {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: solid #fd9222;
+  border-width: 0;
+  transition: 0;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+.hero-nav-link .btnBefore {
+  right: 0;
+  bottom: 0;
+}
+.hero-nav-link .btnAfter {
+  left: 0;
+  top: 0;
+}
+.hero-nav-link:hover .btnBefore {
+  border-width: 0 0 2px 2px;
+}
+.hero-nav-link:hover .btnAfter {
+  border-width: 2px 2px 0 0;
+}
+.hero-nav-link:hover {
+  border: none;
+}
+.hero-nav-link:hover .btnAfter,
+.hero-nav-link:hover .btnBefore {
+  height: 100%;
+  width: 100%;
+  transition: width 0.5s ease, height 0.3s ease 0.3s,
+    border-top-right-radius 0.1s ease 0.4s,
+    border-bottom-left-radius 0.1s ease 0.4s,
+    border-bottom-right-radius 0.1s ease 0.9s,
+    border-top-left-radius 0.1s ease 0.9s;
+}
+/**
+  |============================
+  | end animation how its made
+  |============================
+*/
 @media only screen and (max-width: 352px) {
   .hero-nav-link {
     padding: 12px 20px;
@@ -244,3 +323,8 @@
   background-color: var(--brand-color);
   fill: var(--light-color);
 }
+/**
+  |============================
+  | end hero styles
+  |============================
+*/
