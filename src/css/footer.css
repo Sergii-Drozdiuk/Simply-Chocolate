@@ -201,13 +201,14 @@
 */
 
 .back-to-top {
-  background: var(--light-color);
+  background: transparent;
 
   border-radius: 50%;
   position: fixed;
+  z-index: 1000;
   bottom: -50px;
-  padding: 10px 12px;
-  right: 50px;
+  padding: 6px;
+  right: 0;
   cursor: pointer;
   border: 1px solid var(--brand-color);
   transition: 0.3s all;
@@ -235,4 +236,15 @@
 .back-to-top-icon {
   transform: rotate(180deg);
   fill: var(--brand-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .back-to-top {
+    padding: 8px;
+  }
+
+  .back-to-top-icon {
+    width: 22px;
+    height: 22px;
+  }
 }
