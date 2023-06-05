@@ -240,7 +240,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(7px) brightness(0.86) grayscale(28%) opacity(92%);
+  background-color: rgba(46, 47, 66, 0.4);
   z-index: 1000;
   transition: 0.3s all;
 }
