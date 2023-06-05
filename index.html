@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
   
   <script type="module" crossorigin src="/excellent-chocolate-mood-team-project/assets/index-076010ea.js"></script>
-  <link rel="stylesheet" href="/excellent-chocolate-mood-team-project/assets/index-e03da3e3.css">
+  <link rel="stylesheet" href="/excellent-chocolate-mood-team-project/assets/index-a1a00b73.css">
 </head>
 
 <body>
@@ -1117,7 +1117,11 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button type="button" class="subscribe-btn button">
+    <button
+      type="button"
+      class="subscribe-btn button js-open-modal"
+      data-modal="2"
+    >
       <span></span>
       <span></span>
       <span></span>
@@ -1127,6 +1131,37 @@
     </button>
   </div>
 </section>
+<div class="subcribe-modal modal" data-modal="2">
+  <svg class="modal-sb-icon modal__cross js-modal-close" width="28" height="28">
+    <use href="/excellent-chocolate-mood-team-project/assets/icons-92e79fc0.svg#icon-x"></use>
+  </svg>
+  <h2 class="modal-sb-title">
+    Explore our <br /><span class="modal-sb-title-span">new chocolate</span>
+    first!
+  </h2>
+  <div class="input-sb-container">
+    <input
+      name="user_email"
+      type="email"
+      id="email"
+      class="input-sb-email"
+      required
+      spellcheck="true"
+      placeholder="Enter your email"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+    />
+    <button type="button" class="button js-modal-close modal-sb-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="text">Submit</span>
+    </button>
+  </div>
+</div>
+<div class="overlay-sb overlay"></div>
+<script src="../js/scroll.js"></script>
 
   </main>
   <footer class="footer-section section" id="footer">
