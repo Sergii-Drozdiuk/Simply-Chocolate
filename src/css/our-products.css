@@ -11,8 +11,11 @@
 .our-products-title-color {
   color: var(--brand-color);
 }
-
+.swiper-wrapper {
+  scroll-snap-type: x mandatory;
+}
 .our-products-list-item {
+  scroll-snap-align: start;
   padding: 32px 52px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
