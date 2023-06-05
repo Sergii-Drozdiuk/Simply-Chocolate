@@ -102,7 +102,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -98%);
   z-index: 5000;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
   padding: 48px;
