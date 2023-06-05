@@ -22,7 +22,7 @@
   text-align: center;
   cursor: pointer;
 
-  transition: border var(--transition-timings);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-products-list-item:hover,
@@ -37,14 +37,14 @@
 
 .our-products-list-item:hover .our-products-item-title,
 .our-products-list-item:focus .our-products-item-title {
-  color: var(--accent-color);
+  color: var(--brand-color);
 }
 
 .our-products-list-item:hover .our-products-item-price-btn,
 .our-products-list-item:focus .our-products-item-price-btn {
-  border: 1px solid var(--accent-color);
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  border: 1px solid var(--brand-color);
+  background-color: var(--brand-color);
+  color: var(--light-color);
 }
 .our-products-item-title {
   font-weight: 600;
@@ -73,11 +73,11 @@
   line-height: 1.21;
   color: var(--main-color);
   background-color: var(--grey-color);
-  border: 1px solid var (--dark-transparent);
+  border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
-  transition: color var (--transition-timings),
-    background-color var (--transition-timings),
-    transform var (--transition-timings);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn.our-products-item-price-btn:hover,
