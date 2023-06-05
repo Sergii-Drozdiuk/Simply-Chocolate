@@ -177,7 +177,7 @@
   padding: 28px;
   border-radius: 15px;
 
-  overflow-x: scroll;
+  overflow: auto;
   transform: rotateY(180deg); 
    
   background-color: var(--light-color);
