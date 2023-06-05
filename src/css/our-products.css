@@ -50,7 +50,7 @@
 
 .our-products-list-item:hover,
 .our-products-list-item:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--brand-color);
 }
 
 .our-products-list-item:hover .our-product-img,
@@ -111,19 +111,9 @@
 }
 
 @media screen and (min-width: 375px) {
-  .container.products-content {
-    width: 375px;
-    /* width: 100%; */
-  }
 }
 
 @media screen and (min-width: 768px) {
-  .container.products-content {
-    /* max-width: 100%;
-      width: 100%; */
-    width: 768px;
-  }
-
   .our-products-list .slick-track {
     gap: 18px;
   }
