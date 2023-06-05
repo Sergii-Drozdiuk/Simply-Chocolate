@@ -168,6 +168,8 @@
 .footer-socilal-icon {
   stroke: var(--light-color);
   fill: currentColor;
+
+  transition: stroke var(--transition-timings);
 }
 
 .footer-socilal-icon:hover {
