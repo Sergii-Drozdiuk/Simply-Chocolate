@@ -151,18 +151,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: var(--bg-close-icon);
-  cursor: pointer;
+
   transition: background-color var(--transition-duration-funs);
-  border: 1px solid var(--grey-transparent-color);
 }
 .modal-close-reviews-btn:hover,
 .modal-close-reviews-btn:focus {
-  border: 1px solid var(--grey-transparent-color);
   background: #fcf1e0;
+}
+@media only screen and (min-width: 768px) {
+  .modal-close-reviews-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.icon-close {
+  cursor: pointer;
+  position: absolute;
+  stroke: var(--main-color);
+}
+.icon-close:hover,
+.icon-close:focus {
+  width: 16px;
+  height: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .icon-close {
+    width: 28px;
+    height: 28px;
+  }
+  .icon-close:hover,
+  .icon-close:focus {
+    width: 22px;
+    height: 22px;
+  }
+}
+.icon-close:hover {
+  stroke: var(--brand-color);
 }
 .modal-reviews {
   position: fixed;
@@ -222,6 +251,7 @@
 .modal-reviews-field {
   position: relative;
   display: flex;
+  align-items: center;
 }
 
 .modal-reviews-field:not(:last-child) {
@@ -251,7 +281,7 @@
   height: 45px;
   width: 100%;
   border: 1px solid var(--grey-transparent-color);
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 14px 18px;
 }
 .modal-reviews-input:focus,
@@ -313,6 +343,49 @@
     left: 24px;
     font-size: 17px;
     line-height: 1.22;
+  }
+}
+.wrapper-phone {
+  position: absolute;
+  display: flex;
+  left: 18px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  border-right: 1px solid var(--grey-transparent-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper-phone {
+    left: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 32px;
+  }
+}
+.phone-number-reviews {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-left: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .phone-number-reviews {
+    font-size: 18px;
+    line-height: 1.22;
+    margin-left: 18px;
+  }
+}
+.input-number-reviews {
+  padding-left: 106px;
+}
+@media only screen and (min-width: 768px) {
+  .input-number-reviews {
+    padding-left: 177px;
   }
 }
 .reviews-button-send {
