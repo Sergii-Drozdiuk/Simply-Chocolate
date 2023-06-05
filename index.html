@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
   
   <script type="module" crossorigin src="/excellent-chocolate-mood-team-project/assets/index-f2f593f9.js"></script>
-  <link rel="stylesheet" href="/excellent-chocolate-mood-team-project/assets/index-6ebe4b11.css">
+  <link rel="stylesheet" href="/excellent-chocolate-mood-team-project/assets/index-fac44287.css">
 </head>
 
 <body>
@@ -53,14 +53,14 @@
 
       <ul class="header-socials-list">
         <li class="header-socials-item">
-          <a class="header-socials-link" href="">
+          <a class="header-socials-link" href="https://www.instagram.com/">
             <svg class="header-socials-icon" width="24" height="24">
               <use href="/excellent-chocolate-mood-team-project/assets/icons-92e79fc0.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="header-socials-item">
-          <a class="header-socials-link" href="">
+          <a class="header-socials-link" href="https://twitter.com/">
             <svg class="header-socials-icon" width="24" height="24">
               <use href="/excellent-chocolate-mood-team-project/assets/icons-92e79fc0.svg#twitter"></use>
             </svg>
@@ -68,7 +68,11 @@
         </li>
       </ul>
 
-      <button class="button burger-menu-btn" type="button">
+      <button
+        class="button burger-menu-btn js-open-modal"
+        data-modal="3"
+        type="button"
+      >
         <svg class="burger-menu-icon" width="21" height="14">
           <use href="/excellent-chocolate-mood-team-project/assets/icons-92e79fc0.svg#menu-mobile"></use>
         </svg>
@@ -79,8 +83,8 @@
 
 <!-- Mobile window -->
 
-<div class="mobile-menu-container">
-  <button class="button mobile-close-btn" type="button">
+<div class="mobile-menu-container modal">
+  <button class="button mobile-close-btn js-modal-close" type="button">
     <svg class="mobile-close-icon" width="12" height="12">
       <use href="/excellent-chocolate-mood-team-project/assets/icons-92e79fc0.svg#icon-x"></use>
     </svg>
@@ -106,14 +110,14 @@
 
   <ul class="mobile-socials-list">
     <li class="mobile-socials-item">
-      <a class="mobile-socials-link" href="">
+      <a class="mobile-socials-link" href="https://www.instagram.com/">
         <svg class="mobile-socials-icon" width="22" height="22">
           <use href="/excellent-chocolate-mood-team-project/assets/icons-92e79fc0.svg#instagram"></use>
         </svg>
       </a>
     </li>
     <li class="mobile-socials-item">
-      <a class="mobile-socials-link" href="">
+      <a class="mobile-socials-link" href="https://twitter.com/">
         <svg class="mobile-socials-icon" width="20" height="20">
           <use href="/excellent-chocolate-mood-team-project/assets/icons-92e79fc0.svg#twitter"></use>
         </svg>
@@ -121,6 +125,7 @@
     </li>
   </ul>
 </div>
+<div class="overlay" id="overlay-modal"></div>
 
   <main>
     <section class="hero-section section">
