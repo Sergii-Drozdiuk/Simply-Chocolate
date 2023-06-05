@@ -80,6 +80,11 @@
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.our-product-img {
+  margin-bottom: 8px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .btn.our-products-item-price-btn:hover,
 .btn.our-products-item-price-btn:focus {
   transform: scale(1.1);
