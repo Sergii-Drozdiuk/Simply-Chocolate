@@ -190,3 +190,72 @@
 .mobile-socials-icon:hover {
   stroke: var(--brand-color);
 }
+@media only screen and (max-width: 767px) {
+  .header-nav-list {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header-socials-list {
+    display: none;
+  }
+}
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+.header-logo-link {
+  margin-right: 138px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-logo-link {
+    margin-right: 503px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header-logo-link {
+    margin-right: 188px;
+  }
+}
+.header-logo-list {
+  display: flex;
+  gap: 4px;
+}
+.header-logo-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+.header-logo-span {
+  font-style: italic;
+}
+
+/* modal window */
+
+.mobile-menu-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1e1823;
+}
+.mobile-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.mobile-nav-list {
+  margin-top: 136px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}

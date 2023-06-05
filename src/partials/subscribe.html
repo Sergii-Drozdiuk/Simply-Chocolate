@@ -7,7 +7,11 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button type="button" class="subscribe-btn button js-open-modal" data-modal="2">
+    <button
+      type="button"
+      class="subscribe-btn button js-open-modal"
+      data-modal="2"
+    >
       <span></span>
       <span></span>
       <span></span>
@@ -25,17 +29,25 @@
     Explore our <br /><span class="modal-sb-title-span">new chocolate</span>
     first!
   </h2>
-  <div class="input-sb-container">
-    <input name="user_email" type="email" id="email" class="input-sb-email" required spellcheck="true"
-      placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-    <button type="button" class="button js-modal-close modal-sb-btn">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span class="text">Submit</span>
-    </button>
-  </div>
+  <form>
+    <div class="input-sb-container">
+      <input
+        name="user_email"
+        type="email"
+        class="input-sb-email"
+        required
+        placeholder="Enter your email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      />
+      <button type="submit" class="button modal-sb-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="text">Submit</span>
+      </button>
+    </div>
+  </form>
 </div>
 <div class="overlay-sb overlay"></div>

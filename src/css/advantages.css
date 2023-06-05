@@ -12,19 +12,19 @@
 }
 
 .advantages-title-chocolate {
-  width: 173px;
-  height: 22px;
 }
 
 .advantages-title-coin {
-  width: 150px;
-  height: 22px;
 }
 
 .advantages-title-spoon {
-  width: 155px;
-  height: 22px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
   letter-spacing: 0.01em;
+  color: #ffffff;
 }
 .advantages-text {
   line-height: 17px;
@@ -61,7 +61,7 @@
 }
 
 .advantages-item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .advantages-icon {
@@ -78,11 +78,20 @@
   }
   .advantages-text-coin {
     min-height: 119px;
+    margin-bottom: 20px;
+  }
+
+  .advantages-text-chocolate {
+    height: 102px;
+    margin-bottom: 38px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages-section {
+    padding-bottom: 0;
+  }
+  .advantages-container {
     min-width: 768px;
     height: 620px;
     padding-left: 32px;
@@ -111,6 +120,12 @@
     min-width: 1200px;
     height: 344px;
   }
+  .advantages-container {
+    padding-top: 50px;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .advantages-list {
     display: flex;
     flex-direction: row;
@@ -138,7 +153,7 @@
   .advantages-item:not(:last-child)::after {
     content: '';
     position: absolute;
-    top: 124px;
+    top: 120px;
     left: 270px;
     width: 124px;
     height: 0px;

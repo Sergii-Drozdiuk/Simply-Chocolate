@@ -3,3 +3,4 @@ import './reviews.js';
 import './back-to-top.js';
 import './scroll.js';
 import './swipe.js';
+import './swiper.js';

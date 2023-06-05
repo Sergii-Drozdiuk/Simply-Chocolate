@@ -102,7 +102,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -98%);
   z-index: 5000;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
   padding: 48px;
@@ -142,7 +142,8 @@
 .modal-sb-icon {
   transition: stroke 250ms ease-in-out;
 }
-.modal-sb-icon:hover {
+.modal-sb-icon:hover,
+.modal-sb-icon:focus {
   stroke: var(--brand-color);
 }
 .modal-sb-title {
@@ -152,7 +153,6 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111111;
-  width: 298px;
   margin-bottom: 28px;
 }
 .modal-sb-title-span {
@@ -207,7 +207,7 @@
   transform: translate(-6em, 2.3em);
 }
 .modal-sb-btn span:nth-child(3) {
-  transform: translate(-0.2em, 1.8em);
+  transform: translate(-0.2em, 1.9em);
 }
 .modal-sb-btn span:nth-child(4) {
   transform: translate(3.5em, 2.4em);
@@ -221,7 +221,7 @@
 }
 .modal-sb-btn:hover span:not(:nth-child(6)),
 .modal-sb-btn:focus span:not(:nth-child(6)) {
-  transform: translate(-50%, -50%) scale(4.1);
+  transform: translate(-50%, -50%) scale(4);
   transition: 1.5s ease;
 }
 @media only screen and (max-width: 767px) {
@@ -231,10 +231,11 @@
   }
   .modal-sb-title {
     font-size: 20px;
-    width: 263px;
   }
   .input-sb-email {
+    font-size: 14px;
     width: 263px;
+    height: 45px;
   }
   .input-sb-container {
     gap: 0;
@@ -246,6 +247,7 @@
     padding: 14px 28px;
   }
   .input-sb-email::placeholder {
+    font-size: 14px;
     line-height: 1.17;
   }
 }
