@@ -4,30 +4,18 @@
 .advantages-title {
   font-weight: 600;
   font-size: 18px;
-  line-height: 22px;
-  color: #ffffff;
+  color: var(--light-color);
   margin-bottom: 18px;
   text-transform: capitalize;
-  text-align: justify;
 }
-
-.advantages-title-chocolate {
-}
-
-.advantages-title-coin {
-}
-
 .advantages-title-spoon {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 22px;
   letter-spacing: 0.01em;
-  color: #ffffff;
+  color: var(--light-color);
 }
 .advantages-text {
-  line-height: 17px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -88,9 +76,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .advantages-section {
-    padding-bottom: 0;
-  }
   .advantages-container {
     min-width: 768px;
     height: 620px;

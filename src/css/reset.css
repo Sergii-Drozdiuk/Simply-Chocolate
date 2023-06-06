@@ -23,16 +23,16 @@ p {
   overflow: hidden;
 }
 
-section {
+.section {
   padding-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
-  section {
+  .section {
     padding-bottom: 100px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  section {
+  .section {
     padding-bottom: 128px;
   }
 }
