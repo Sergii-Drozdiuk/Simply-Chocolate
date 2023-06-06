@@ -40,6 +40,10 @@
   padding-bottom: 14px;
   background-color: var(--grey-color);
 }
+.header-container {
+  padding-left: 0;
+  padding-right: 0;
+}
 .header-nav {
   display: flex;
   align-items: center;
