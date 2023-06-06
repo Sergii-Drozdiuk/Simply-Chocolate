@@ -4,22 +4,21 @@
   |============================
 */
 .hero-section {
-  padding-top: 80px;
+  padding-top: 14px;
 }
 @media only screen and (min-width: 768px) {
   .hero-section {
+    padding-top: 24px;
     padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .hero-section {
-    padding-bottom: 72px;
+    padding-top: 32px;
   }
 }
 .hero-container {
   background-color: #1e1823;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 395px;
   padding-left: 20px;
   padding-right: 20px;
@@ -104,7 +103,6 @@
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: var(--light-color);
-  margin: 0;
   margin-bottom: 32px;
 }
 @media only screen and (min-width: 768px) {
@@ -121,20 +119,15 @@
 }
 .buy-now-btn {
   display: block;
-  cursor: pointer;
   padding: 12px 28px;
-  border: transparent;
   background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.2;
   color: var(--light-color);
   position: relative;
   overflow: hidden;
-  transition: var(--transition-timings);
-  /* transition: background-color, color; */
 }
 /**
   |============================
@@ -181,16 +174,6 @@
   transform: translate(-50%, -50%) scale(4.1);
   transition: 1.5s ease;
 }
-/* .buy-now-btn:hover,
-.buy-now-btn:focus {
-  background-color: transparent;
-  color: var(--brand-color);
-} */
-/**
-  |============================
-  | end animation buy now
-  |============================
-*/
 @media only screen and (max-width: 352px) {
   .buy-now-btn {
     padding: 12px 20px;
@@ -202,23 +185,13 @@
   }
 }
 .hero-nav-link {
-  display: flex;
   padding: 12px 28px;
-  align-items: center;
-  justify-content: center;
   border: 1px solid var(--light-color);
   border-radius: 100px;
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.2;
-  text-decoration: none;
   color: var(--light-color);
-
-  /* animation */
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  transition: all 0.5s ease-out;
+  transition: color, border-color var(--transition-timings);
 }
 .hero-nav-link:hover,
 .hero-nav-link:focus {
@@ -293,19 +266,27 @@ span {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-  text-decoration: none;
   letter-spacing: -0.03em;
-  color: var(--light-color);
-  /* transition: color; */
+  background: linear-gradient(
+    to right,
+    var(--brand-color),
+    var(--brand-color) 50%,
+    var(--light-color) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 500ms ease-in-out;
 }
 .hero-scroll-link:hover,
 .hero-scroll-link:focus {
   color: var(--brand-color);
+  background-position: 0 100%;
 }
 @media only screen and (min-width: 768px) {
   .hero-scroll-link {
@@ -316,8 +297,7 @@ span {
   background-color: var(--light-color);
   border-radius: 50%;
   fill: var(--brand-color);
-  padding: 6px;
-  /* transition: background-color, fill; */
+  transition: var(--transition-timings);
 }
 .hero-skroll-icon:hover,
 .hero-skroll-icon:focus {
