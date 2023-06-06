@@ -1,18 +1,20 @@
 .header {
-  /* position: absolute; */
   top: 0;
   width: 100%;
-  /* z-index: 100; */
   padding-top: 20px;
   padding-bottom: 14px;
   background-color: var(--grey-color);
 }
 .header-container {
-  /* padding-left: 0;
-  padding-right: 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-container {
+    display: block;
+  }
 }
 .header-nav {
   display: flex;
@@ -22,11 +24,11 @@
 .header-logo-link {
   margin-right: auto;
 }
-/* @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .header-logo-link {
     margin-right: 188px;
   }
-} */
+}
 .header-logo-list {
   display: flex;
   gap: 4px;
@@ -42,6 +44,13 @@
   font-style: italic;
 }
 
+@media only screen and (min-width: 1200px) {
+  .header-logo-text {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
 .header-nav-list {
   display: flex;
   gap: 24px;
@@ -51,9 +60,26 @@
   display: flex;
   gap: 18px;
 }
+
+.header-socials-item {
+  width: 24px;
+  height: 24px;
+}
+
+.header-socials-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
 .header-socials-icon {
   stroke: var(--main-color);
   fill: var(--grey-color);
+
+  transition: stroke var(--transition-timings);
 }
 .header-socials-icon:hover {
   stroke: var(--brand-color);
@@ -67,27 +93,22 @@
 }
 
 .header-nav-link {
-  text-decoration: none;
-  overflow: hidden;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: -0.02em;
   color: var(--main-color);
-}
-.header-nav-link {
+
   background: linear-gradient(to right, #fd9222, #fd9222 50%, #111111 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-}
-.header-nav-link {
+
   transition: background-position 500ms ease-in-out;
 }
+
 .header-nav-link:hover {
   background-position: 0 100%;
 }
@@ -97,8 +118,8 @@
 }
 @media only screen and (min-width: 768px) {
   .burger-menu-icon {
-    width: 24px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
   }
 }
 .burger-menu-btn {
