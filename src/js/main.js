@@ -8,3 +8,4 @@ import './scroll.js';
 import './swiper.js';
 import './mobile.js';
 import './animation.js';
+import './top-sellers.js';
