@@ -32,13 +32,11 @@
 }
 .modal-1.active-1 {
   transition: right 0.5s ease-in-out;
+  top: 0;
   right: 0;
 }
 .header {
-  position: absolute;
-  top: 0;
   width: 100%;
-  z-index: 500;
   padding-top: 20px;
   background-color: var(--grey-color);
 }
@@ -47,7 +45,8 @@
   align-items: center;
   justify-content: space-between;
 }
-.header-logo-list {
+.header-logo-link {
+  align-items: center;
   display: flex;
   gap: 4px;
 }
@@ -85,7 +84,7 @@
 .header-socials-icon:focus {
   stroke: var(--brand-color);
 }
-.header-logo-text {
+.header-logo-link {
   font-weight: 700;
   letter-spacing: -0.03em;
   color: var(--main-color);
@@ -99,6 +98,9 @@
   position: absolute;
   gap: 18px;
   display: flex;
+}
+.mobile-socials-link {
+  display: inline-block;
 }
 .mobile-socials-icon {
   stroke: var(--light-color);
@@ -180,14 +182,6 @@
   }
   .header-socials-list {
     display: none;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .modal {
-    height: 100%;
-  }
-  .modal-header {
-    height: 101%;
   }
 }
 @media only screen and (min-width: 768px) {
