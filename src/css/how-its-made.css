@@ -37,68 +37,32 @@
 
 .how-its-made-holder {
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 614px;
   border-radius: 15px;
 }
-
+@media only screen and (max-width: 767px) {
+    .how-its-made-holder {
+        width: 335px;
+        height: 500px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .how-its-made-holder {
+        width: 614px;
+        height: 400px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .how-its-made-holder {
+        width: 600px;
+        height: 400px;
+    }
+}
 @media only screen and (max-width: 1199px) {
   .how-its-made-holder {
     margin-left: auto;
     margin-right: auto;
   }
 }
-
-@media only screen and (max-width: 375px) {
-  .how-its-made-holder {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/img/how-its-made.img/image_mob@1x.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .how-its-made-holder {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/img/how-its-made.img/image_mob@2x.jpg);
-    }
-  }
-}
-
-@media only screen and (min-width: 376px) and (max-width: 768px) {
-  .how-its-made-holder {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/img/how-its-made.img/image_tab@1x.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .how-its-made-holder {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/img/how-its-made.img/image_tab@2x.jpg);
-    }
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .how-its-made-holder {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/img/how-its-made.img/image_desk@1x.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .how-its-made-holder {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/img/how-its-made.img/image_desk@2x.jpg);
-    }
-  }
-}
-
 @media only screen and (min-width: 300px) and (max-width: 1199px) {
   .how-its-made-holder {
     margin-bottom: 20px;
@@ -129,7 +93,7 @@
     height: 35px;
   }
 }
-.how-its-made-cont:hover .how-its-made-video,
+/* .how-its-made-cont:hover .how-its-made-video,
 .how-its-made-cont:focus .how-its-made-video {
   position: absolute;
   width: 1px;
@@ -141,7 +105,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .how-its-made-icon {
   position: absolute;
