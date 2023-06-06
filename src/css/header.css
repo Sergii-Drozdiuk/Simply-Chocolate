@@ -104,6 +104,7 @@
   display: inline-block;
 }
 .mobile-socials-icon {
+  fill: var(--secondary-color);
   stroke: var(--light-color);
   transition: var(--transition-timings);
 }
