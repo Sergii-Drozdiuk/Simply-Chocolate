@@ -251,11 +251,12 @@
   opacity: 1;
   visibility: visible;
 }
-.modal-icon {
-  cursor: pointer;
+.modal-buy-now-close-btn {
   top: 24px;
   right: 24px;
   position: absolute;
+}
+.modal-icon {
   stroke: var(--main-color);
 }
 .modal-icon {
