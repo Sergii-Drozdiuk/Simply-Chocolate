@@ -8,13 +8,12 @@
   right: 100%;
   z-index: 100000;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
-  padding: 48px;
   background: #1e1823;
 }
 .overlay-header {
   opacity: 0;
   visibility: hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -38,6 +37,7 @@
 .header {
   width: 100%;
   padding-top: 20px;
+  padding-bottom: 14px;
   background-color: var(--grey-color);
 }
 .header-nav {
@@ -66,6 +66,7 @@
   background-position: 100%;
   transition: background-position 500ms ease-in-out;
 }
+
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--brand-color);
@@ -80,8 +81,8 @@
   fill: var(--light-color);
   transition: var(--transition-timings);
 }
-.header-socials-icon:hover,
-.header-socials-icon:focus {
+.header-socials-item .header-socials-link:hover .header-socials-icon,
+.header-socials-item .header-socials-link:focus .header-socials-icon {
   stroke: var(--brand-color);
 }
 .header-logo-link {
@@ -106,8 +107,8 @@
   stroke: var(--light-color);
   transition: var(--transition-timings);
 }
-.mobile-socials-icon:hover,
-.mobile-socials-icon:focus {
+.mobile-socials-item .mobile-socials-link:hover .mobile-socials-icon,
+.mobile-socials-item .mobile-socials-link:focus .mobile-socials-icon {
   stroke: var(--brand-color);
 }
 .mobile-nav-list {
@@ -191,6 +192,7 @@
   }
   .header {
     padding-top: 24px;
+    padding-bottom: 24px;
   }
   .modal-header {
     width: 290px;
@@ -212,6 +214,6 @@
     margin-left: auto;
   }
   .header {
-    padding-top: 28px;
+    padding-bottom: 32px;
   }
 }
