@@ -13,7 +13,9 @@
   background-position: center;
   border-radius: 30px;
 }
-
+.hero-section {
+  padding-bottom: 72px;
+}
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -85,6 +87,9 @@
   .hero-subtitle {
     max-width: 484px;
     font-size: 28px;
+  }
+  .hero-section {
+    padding-bottom: 50px;
   }
 }
 .hero-nav-wrapper {
@@ -221,4 +226,9 @@
 }
 .hero-container {
   width: 96%;
+}
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    padding-bottom: 72px;
+  }
 }
