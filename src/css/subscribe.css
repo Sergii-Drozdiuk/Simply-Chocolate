@@ -99,7 +99,8 @@
   visibility: hidden;
   width: 538px;
   height: min-content;
-  position: absolute;
+  position: fixed;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -98%);
@@ -129,7 +130,7 @@
 }
 .subcribe-modal {
   padding: 236px 40px 40px 40px;
-  position: relative;
+
   background-image: url(../img/subscribe-bg/img-modal.webp);
   background-repeat: no-repeat;
 }
