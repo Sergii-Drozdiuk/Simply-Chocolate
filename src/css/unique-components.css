@@ -22,6 +22,10 @@
     text-align: center;
   }
 }
+
+.unique-components-item {
+  width: 100%;
+}
 .unique-components-title {
   margin-bottom: 24px;
 }
@@ -203,8 +207,6 @@
      overflow: hidden;
   } 
 }
-
-
 
 .unique-components-item:nth-child(4) .unique-components-card-text{
   -webkit-line-clamp: 7;
