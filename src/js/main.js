@@ -1,6 +1,11 @@
+// import './jquery-3.7.0.min.js';
+// import './aos.js';
+// import './swiper-bundle.min.js';
 import './owl.carousel.min.js';
 import './reviews.js';
 import './back-to-top.js';
 import './scroll.js';
 import './swiper.js';
 import './mobile.js';
+import './animation.js';
+import './top-sellers.js';

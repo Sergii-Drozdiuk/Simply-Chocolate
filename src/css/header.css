@@ -8,13 +8,12 @@
   right: 100%;
   z-index: 100000;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
-  padding: 48px;
   background: #1e1823;
 }
 .overlay-header {
   opacity: 0;
   visibility: hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -32,14 +31,13 @@
 }
 .modal-1.active-1 {
   transition: right 0.5s ease-in-out;
+  top: 0;
   right: 0;
 }
 .header {
-  position: absolute;
-  top: 0;
   width: 100%;
-  z-index: 500;
   padding-top: 20px;
+  padding-bottom: 14px;
   background-color: var(--grey-color);
 }
 .header-nav {
@@ -47,7 +45,8 @@
   align-items: center;
   justify-content: space-between;
 }
-.header-logo-list {
+.header-logo-link {
+  align-items: center;
   display: flex;
   gap: 4px;
 }
@@ -67,6 +66,7 @@
   background-position: 100%;
   transition: background-position 500ms ease-in-out;
 }
+
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--brand-color);
@@ -81,11 +81,11 @@
   fill: var(--light-color);
   transition: var(--transition-timings);
 }
-.header-socials-icon:hover,
-.header-socials-icon:focus {
+.header-socials-item .header-socials-link:hover .header-socials-icon,
+.header-socials-item .header-socials-link:focus .header-socials-icon {
   stroke: var(--brand-color);
 }
-.header-logo-text {
+.header-logo-link {
   font-weight: 700;
   letter-spacing: -0.03em;
   color: var(--main-color);
@@ -95,17 +95,21 @@
 }
 .mobile-socials-list {
   left: 20px;
-  bottom: 20px;
+  bottom: 80px;
   position: absolute;
   gap: 18px;
   display: flex;
 }
+.mobile-socials-link {
+  display: inline-block;
+}
 .mobile-socials-icon {
+  fill: var(--secondary-color);
   stroke: var(--light-color);
   transition: var(--transition-timings);
 }
-.mobile-socials-icon:hover,
-.mobile-socials-icon:focus {
+.mobile-socials-item .mobile-socials-link:hover .mobile-socials-icon,
+.mobile-socials-item .mobile-socials-link:focus .mobile-socials-icon {
   stroke: var(--brand-color);
 }
 .mobile-nav-list {
@@ -182,14 +186,6 @@
     display: none;
   }
 }
-@media only screen and (max-width: 767px) {
-  .modal {
-    height: 100%;
-  }
-  .modal-header {
-    height: 101%;
-  }
-}
 @media only screen and (min-width: 768px) {
   .burger-menu-icon {
     width: 32px;
@@ -197,6 +193,7 @@
   }
   .header {
     padding-top: 24px;
+    padding-bottom: 24px;
   }
   .modal-header {
     width: 290px;
@@ -218,6 +215,6 @@
     margin-left: auto;
   }
   .header {
-    padding-top: 28px;
+    padding-bottom: 32px;
   }
 }

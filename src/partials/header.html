@@ -3,22 +3,16 @@
 <header class="header">
   <div class="header-container container">
     <nav class="header-nav">
-      <a class="header-logo-link" href="#">
-        <ul class="header-logo-list">
-          <li class="header-logo-text">
-            <span class="header-logo-span">SIMPLY </span>CHOCOLATE
-          </li>
-          <li class="header-logo-picture">
-            <svg class="header-logo-icon" width="21" height="21">
-              <use href="./img/icons.svg#logo"></use>
-            </svg>
-          </li>
-        </ul>
+      <a class="header-logo-link" href="./index.html">
+        <span class="header-logo-span">SIMPLY </span>CHOCOLATE
+        <svg class="header-logo-icon" width="21" height="21">
+          <use href="./img/icons.svg#logo"></use>
+        </svg>
       </a>
 
       <ul class="header-nav-list">
         <li class="header-nav-item">
-          <a class="header-nav-link" href="#">Home</a>
+          <a class="header-nav-link" href="./index.html">Home</a>
         </li>
         <li class="header-nav-item">
           <a class="header-nav-link" href="#how-its-made">How it's made?</a>
@@ -41,6 +35,7 @@
             href="https://www.instagram.com/"
             target="_blank"
             rel="noreferrer noopener"
+            aria-label="Read more about us in Isntagram"
           >
             <svg class="header-socials-icon" width="24" height="24">
               <use href="./img/icons.svg#instagram"></use>
@@ -53,6 +48,7 @@
             href="https://twitter.com/"
             target="_blank"
             rel="noreferrer noopener"
+            aria-label="Read more about us in Twitter"
           >
             <svg class="header-socials-icon" width="24" height="24">
               <use href="./img/icons.svg#twitter"></use>
@@ -72,50 +68,56 @@
       </button>
     </nav>
   </div>
+  <!-- mobile menu -->
+  <div class="mobile-menu-container modal-1 modal-header" data-modal="29">
+    <button class="button mobile-close-btn js-modal-close" type="button">
+      <svg class="mobile-close-icon" width="28" height="28">
+        <use href="./img/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#how-its-made">How it's made?</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#our-products">Our products</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#top-sellers">Top sellers</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#reviews">Chocolate is loved</a>
+      </li>
+    </ul>
+
+    <ul class="mobile-socials-list">
+      <li class="mobile-socials-item">
+        <a
+          class="mobile-socials-link"
+          href="https://www.instagram.com/"
+          aria-label="Read more about us in Isntagram"
+        >
+          <svg class="mobile-socials-icon" width="22" height="22">
+            <use href="./img/icons.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-socials-item">
+        <a
+          class="mobile-socials-link"
+          href="https://twitter.com/"
+          aria-label="Read more about us in Isntagram"
+        >
+          <svg class="mobile-socials-icon" width="20" height="20">
+            <use href="./img/icons.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="overlay-1 overlay-header" id="overlay-modal-1"></div>
 </header>
-
-<!-- Mobile window -->
-
-<div class="mobile-menu-container modal-1 modal-header" data-modal="29">
-  <button class="button mobile-close-btn js-modal-close" type="button">
-    <svg class="mobile-close-icon" width="28" height="28">
-      <use href="./img/icons.svg#icon-x"></use>
-    </svg>
-  </button>
-
-  <ul class="mobile-nav-list">
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="./index.html">Home</a>
-    </li>
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="#how-its-made">How it's made?</a>
-    </li>
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="#our-products">Our products</a>
-    </li>
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="#top-sellers">Top sellers</a>
-    </li>
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="#reviews">Chocolate is loved</a>
-    </li>
-  </ul>
-
-  <ul class="mobile-socials-list">
-    <li class="mobile-socials-item">
-      <a class="mobile-socials-link" href="https://www.instagram.com/">
-        <svg class="mobile-socials-icon" width="22" height="22">
-          <use href="./img/icons.svg#instagram"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="mobile-socials-item">
-      <a class="mobile-socials-link" href="https://twitter.com/">
-        <svg class="mobile-socials-icon" width="20" height="20">
-          <use href="./img/icons.svg#twitter"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</div>
-<div class="overlay-1 overlay-header" id="overlay-modal"></div>

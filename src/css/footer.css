@@ -1,5 +1,5 @@
 .footer-section {
-  min-width: 300px;
+  /* min-width: 300px; */
   background-color: var(--secondary-color);
   padding: 32px 0;
 }
@@ -168,7 +168,8 @@
   transition: stroke var(--transition-timings);
 }
 
-.footer-socilal-icon:hover {
+.footer-social-img:hover .footer-socilal-icon,
+.footer-social-img:focus .footer-socilal-icon {
   stroke: var(--brand-color);
 }
 
@@ -186,10 +187,8 @@
 }
 
 .footer-nav-link {
-  position: relative;
   font-weight: 500;
   line-height: 1.14;
-  padding-bottom: 8px;
   color: var(--light-color);
 
   background: linear-gradient(
@@ -207,7 +206,8 @@
   transition: background-position 500ms ease-in-out;
 }
 
-.footer-nav-link:hover {
+.footer-nav-link:hover,
+.footer-nav-link:focus {
   color: var(--brand-color);
 
   background-position: 0 100%;

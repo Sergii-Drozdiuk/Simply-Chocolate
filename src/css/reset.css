@@ -38,7 +38,7 @@ p {
 }
 
 .container {
-  min-width: 300px;
+  min-width: 320px;
   max-width: 375px;
   padding: 0 20px;
   margin: 0 auto;

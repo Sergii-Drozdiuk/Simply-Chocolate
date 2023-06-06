@@ -27,7 +27,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   var modalButtons = document.querySelectorAll('.js-open-modal'),
-    overlay = document.querySelector('#overlay-modal-1'),
+    overlay = document.querySelector('#overlay-modal-2'),
     closeButtons = document.querySelectorAll('.js-modal-close');
 
   modalButtons.forEach(function (item) {
@@ -39,17 +39,17 @@ document.addEventListener('DOMContentLoaded', function () {
           '.modal-1[data-modal="' + modalId + '"]'
         );
 
-      modalElem.classList.add('active-1');
-      overlay.classList.add('active-1');
+      modalElem.classList.add('active-2');
+      overlay.classList.add('active-2');
     });
   });
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
-      var parentModal = this.closest('.modal-1');
+      var parentModal = this.closest('.modal-2');
 
-      parentModal.classList.remove('active-1');
-      overlay.classList.remove('active-1');
+      parentModal.classList.remove('active-2');
+      overlay.classList.remove('active-2');
     });
   });
 
@@ -59,15 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
       var key = e.keyCode;
 
       if (key == 27) {
-        document.querySelector('.modal.active-1').classList.remove('active-1');
-        document.querySelector('.overlay-1').classList.remove('active-1');
+        document.querySelector('.modal.active-2').classList.remove('active-2');
+        document.querySelector('.overlay-2').classList.remove('active-2');
       }
     },
     false
   );
 
   overlay.addEventListener('click', function () {
-    document.querySelector('.modal.active-1').classList.remove('active-1');
-    this.classList.remove('active-1');
+    document.querySelector('.modal.active-2').classList.remove('active-2');
+    this.classList.remove('active-2');
   });
 });

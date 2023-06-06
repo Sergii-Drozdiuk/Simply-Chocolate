@@ -251,11 +251,12 @@
   opacity: 1;
   visibility: visible;
 }
-.modal-icon {
-  cursor: pointer;
+.modal-buy-now-close-btn {
   top: 24px;
   right: 24px;
   position: absolute;
+}
+.modal-icon {
   stroke: var(--main-color);
 }
 .modal-icon {
@@ -566,5 +567,13 @@
   .btn-modal:focus span:not(:nth-child(6)) {
     transform: translate(-50%, -50%) scale(4.1);
     transition: 1.5s ease;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .top-sellers-list {
+    width: 300px;
+  }
+  .top-sellers-desc {
+    width: 270px;
   }
 }
