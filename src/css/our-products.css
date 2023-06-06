@@ -82,7 +82,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--main-color);
-  margin-top: 8px;
+  /* margin-top: 8px; */
   margin-bottom: 2px;
   background: linear-gradient(
     to right,
