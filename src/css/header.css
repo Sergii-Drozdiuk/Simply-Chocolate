@@ -149,7 +149,7 @@
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 500ms ease-in-out, scroll 250ms ease-in;
+  transition: background-position 500ms ease-in-out, scroll 250ms ease-in-out;
   position: relative;
 }
 .mobile-nav-link::after {
@@ -211,5 +211,8 @@
   }
   .header {
     padding-bottom: 32px;
+  }
+  .burger-menu-btn {
+    margin-left: 0;
   }
 }
