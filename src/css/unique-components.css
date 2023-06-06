@@ -130,6 +130,7 @@
   backface-visibility: hidden;
 }
 
+ 
 .front-card {
   display: flex;
   padding: 28px;
@@ -178,6 +179,15 @@
 
   background-color: var(--light-color);
 }
+
+@media only screen and (min-width: 1200px) {
+  .back-card {
+    padding-right: 18px;
+  }
+}
+
+ 
+
 
 .back-card-title {
   text-align: start;
