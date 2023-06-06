@@ -569,3 +569,11 @@
     transition: 1.5s ease;
   }
 }
+@media only screen and (max-width: 375px) {
+  .top-sellers-list {
+    width: 300px;
+  }
+  .top-sellers-desc {
+    width: 270px;
+  }
+}
