@@ -105,19 +105,8 @@
   }
 }
 .how-its-made-overlay{
-    border-right: 15px;
+    border-radius: 15px;
 }
-/* .how-its-made-overlay {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.how-its-made-overlay:hover .how-its-made-video,
-.how-its-made-overlay:focus .how-its-made-video {
-  transform: translate(0, 0);
-} */
-
 .how-its-made-cont {
   position: absolute;
   top: 50%;
