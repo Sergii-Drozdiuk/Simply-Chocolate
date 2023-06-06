@@ -200,6 +200,9 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .subcribe-modal {
+    background-size: 100%;
+    padding: 201px 40px 40px 40px;
+    height: 360px;
     background-image: url(../img/subscribe-bg/modalmobsb2.webp);
   }
 }
@@ -213,6 +216,8 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .subcribe-modal {
+      padding: 236px 40px 40px 40px;
+      height: 415px;
       background-image: url(../img/subscribe-bg/modaltabletsb2.webp);
     }
   }
@@ -339,25 +344,20 @@
 .modal-close-subscribe-btn {
   padding: 0;
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 15px;
+  right: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background: var(--bg-close-icon);
-
-  transition: background-color var(--transition-duration-funs);
-}
-.modal-close-subscribe-btn:hover,
-.modal-close-subscribe-btn:focus {
-  background: #fcf1e0;
 }
 @media only screen and (min-width: 768px) {
   .modal-close-subscribe-btn {
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
+    top: 24px;
+    right: 24px;
   }
 }
