@@ -75,9 +75,14 @@
 .subscribe-desc {
   text-align: center;
   margin: 0 auto;
-  width: 467px;
+
   color: var(--light-color);
   margin-bottom: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .subscribe-desc {
+    width: 467px;
+  }
 }
 .subscribe-btn {
   display: block;
@@ -139,6 +144,8 @@
   .subscribe-title {
     width: 291px;
   }
+}
+@media only screen and (min-width: 325px) and (max-width: 767px) {
   .subscribe-desc {
     width: 326px;
   }
