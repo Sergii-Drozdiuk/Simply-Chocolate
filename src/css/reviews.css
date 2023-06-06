@@ -146,8 +146,8 @@
 .modal-close-reviews-btn {
   padding: 0;
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,41 +158,42 @@
 
   transition: background-color var(--transition-duration-funs);
 }
-.modal-close-reviews-btn:hover,
-.modal-close-reviews-btn:focus {
-  background: #fcf1e0;
-}
+
 @media only screen and (min-width: 768px) {
   .modal-close-reviews-btn {
+    top: 24px;
+    right: 24px;
     width: 40px;
     height: 40px;
   }
 }
-
+.modal-close-reviews-btn:hover,
+.modal-close-reviews-btn:focus {
+  background-color: #fcf1e0;
+}
 .icon-close {
-  cursor: pointer;
   position: absolute;
   stroke: var(--main-color);
 }
-.icon-close:hover,
-.icon-close:focus {
+.modal-close-reviews-btn:focus .icon-close,
+.modal-close-reviews-btn:hover .icon-close {
   width: 16px;
   height: 16px;
+  stroke: var(--brand-color);
 }
 @media only screen and (min-width: 768px) {
   .icon-close {
     width: 28px;
     height: 28px;
   }
-  .icon-close:hover,
-  .icon-close:focus {
+  .modal-close-reviews-btn:focus .icon-close,
+  .modal-close-reviews-btn:hover .icon-close {
     width: 22px;
     height: 22px;
+    stroke: var(--brand-color);
   }
 }
-.icon-close:hover {
-  stroke: var(--brand-color);
-}
+
 .modal-reviews {
   position: fixed;
   width: 311px;
