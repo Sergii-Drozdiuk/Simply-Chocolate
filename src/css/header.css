@@ -38,19 +38,13 @@
   padding-top: 20px;
   padding-bottom: 14px;
   background-color: var(--grey-color);
-  
-}
-.header-container {
-  
-}
-.header-container {
-  padding-left: 0;
-  padding-right: 0;
 }
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+.burger-menu-btn {
+  margin-left: auto;
 }
 .header-logo-link {
   align-items: center;
