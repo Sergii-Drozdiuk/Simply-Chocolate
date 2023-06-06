@@ -201,7 +201,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2000;
+  z-index: 1500;
   overflow-y: hidden;
   background: var(--grey-color);
 }
@@ -223,6 +223,11 @@
   backdrop-filter: blur(7px) brightness(0.86) grayscale(28%) opacity(92%);
   z-index: 1000;
   transition: 0.3s all;
+}
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 .modal-reviews-text {
   max-width: 298px;
