@@ -196,12 +196,16 @@
 
 }
 
-.unique-components-card-text{
-  display: -webkit-box;
-  -webkit-line-clamp: 9;
-  -webkit-box-orient: vertical;
-   overflow: hidden;
-} 
+@media only screen and (min-width: 1200px) {
+  .unique-components-card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+  } 
+}
+
+
 
 .unique-components-item:nth-child(4) .unique-components-card-text{
   -webkit-line-clamp: 7;
