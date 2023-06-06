@@ -241,7 +241,6 @@
   background: #4c4c4c;
   border: 1px solid #eceded;
 }
-a.its-made-link,
-a.made-vudeo {
+a.its-made-link {
     display: inline-block;
 }
