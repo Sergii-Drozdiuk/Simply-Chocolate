@@ -195,14 +195,7 @@
   line-height: 1.2;
 
 }
-@media only screen and (min-width: 1200px) {
-  .unique-components-card-text{
-    display: -webkit-box;
-    -webkit-line-clamp: 9;
-    -webkit-box-orient: vertical;
-     overflow: hidden;
-  } 
-}
+с
 
 
 
