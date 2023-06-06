@@ -141,10 +141,6 @@
     gap: 18px;
   }
 
-  .our-products {
-    padding: 100px 0;
-  }
-
   .our-products-title {
     font-size: 24px;
     line-height: 1.17;
@@ -159,10 +155,6 @@
 @media screen and (min-width: 1200px) {
   .container.products-content {
     width: 1200px;
-  }
-
-  .our-products {
-    padding: 128px 0;
   }
 
   .our-products-list-item {
