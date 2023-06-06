@@ -22,7 +22,6 @@
   -webkit-backdrop-filter: blur(7px) brightness(0.86) grayscale(28%)
     opacity(92%);
   z-index: 10001;
-  transition: 0.3s all;
 }
 .modal-1.active-1,
 .overlay-1.active-1 {
@@ -102,8 +101,8 @@
   stroke: var(--main-color);
 }
 .mobile-socials-list {
-  left: 20px;
-  bottom: 80px;
+  left: 50px;
+  bottom: 140px;
   position: absolute;
   gap: 18px;
   display: flex;
@@ -119,12 +118,6 @@
 .mobile-socials-item .mobile-socials-link:hover .mobile-socials-icon,
 .mobile-socials-item .mobile-socials-link:focus .mobile-socials-icon {
   stroke: var(--brand-color);
-}
-.mobile-nav-list {
-  margin-bottom: auto;
-}
-.mobile-nav-link {
-  display: flex;
 }
 .header-logo-span {
   font-style: italic;
