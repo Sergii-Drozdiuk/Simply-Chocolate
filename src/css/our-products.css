@@ -59,11 +59,6 @@
   border-radius: 10px;
 }
 
-.our-products-list-item:hover,
-.our-products-list-item:focus {
-  border: 1px solid var(--brand-color);
-}
-
 .our-products-list-item:hover .our-product-img,
 .our-products-list-item:focus .our-product-img {
   transform: scale(1.1);
