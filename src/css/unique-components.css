@@ -211,3 +211,5 @@
 .unique-components-item:nth-child(4) .unique-components-card-text{
   -webkit-line-clamp: 7;
 }
+
+.unique-components-list{}
