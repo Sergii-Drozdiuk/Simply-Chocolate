@@ -149,7 +149,7 @@
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 500ms ease-in-out;
+  transition: background-position 500ms ease-in-out, scroll 250ms ease-in;
   position: relative;
 }
 .mobile-nav-link::after {
