@@ -12,10 +12,11 @@
   color: var(--brand-color);
 }
 .our-products-list-item {
-  height: 364px;
+  /* height: 364px; */
   z-index: 0;
   position: relative;
-  padding: 32px 52px;
+  padding: 16px 26px;
+
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 10px;
   max-width: 100%;
@@ -23,8 +24,11 @@
   background-color: var(--light-color);
   text-align: center;
   cursor: pointer;
+  @media screen and (min-width: 375px) {
+  }
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .our-products-list-item::before {
   content: '';
   position: absolute;
@@ -131,9 +135,6 @@
   transform: scale(1.1);
   background-color: var(--brand-color);
   color: var(--light-color);
-}
-
-@media screen and (min-width: 375px) {
 }
 
 @media screen and (min-width: 768px) {
