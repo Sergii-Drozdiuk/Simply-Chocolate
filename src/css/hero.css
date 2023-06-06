@@ -297,6 +297,7 @@ span {
   background-color: var(--light-color);
   border-radius: 50%;
   fill: var(--brand-color);
+  padding: 6px;
   transition: var(--transition-timings);
 }
 .hero-skroll-icon:hover,
