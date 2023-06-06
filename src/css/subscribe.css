@@ -171,6 +171,7 @@
   background-color: var(--grey-color);
   border-radius: 15px;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  overflow-y: hidden;
 }
 .overlay-sb {
   opacity: 0;
