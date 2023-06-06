@@ -109,6 +109,7 @@
 
 .footer-contacts-link {
   color: var(--light-color);
+
   background: linear-gradient(
     to right,
     var(--brand-color),
@@ -120,11 +121,14 @@
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
+
   transition: background-position 500ms ease-in-out;
 }
+
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--brand-color);
+
   background-position: 0 100%;
 }
 

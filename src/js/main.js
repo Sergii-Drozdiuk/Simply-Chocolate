@@ -3,4 +3,3 @@ import './reviews.js';
 import './back-to-top.js';
 import './scroll.js';
 import './swiper.js';
-import './mobile.js';

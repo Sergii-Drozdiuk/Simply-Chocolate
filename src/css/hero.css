@@ -1,14 +1,15 @@
 .hero-section {
-  padding-top: 75px;
+  padding-top: 14px;
 }
 @media only screen and (min-width: 768px) {
   .hero-section {
-    padding-top: 75px;
+    padding-top: 24px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .hero-section {
-    padding-top: 93px;
+    padding-top: 32px;
   }
 }
 .hero-container {
@@ -49,6 +50,7 @@
         rgba(17, 17, 17, 0.4) 100%
       ),
       url(/img/herobg/herobgtablet.jpg);
+    padding: 40px;
     padding-top: 671px;
   }
   @media (min-device-pixel-ratio: 2),
@@ -72,6 +74,7 @@
         rgba(17, 17, 17, 0.4) 100%
       ),
       url(/img/herobg/herobgdesk.jpg);
+    padding: 40px;
     padding-top: 381px;
   }
   @media (min-device-pixel-ratio: 2),

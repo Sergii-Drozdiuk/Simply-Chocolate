@@ -38,6 +38,16 @@
 .advantages-item {
   position: relative;
 }
+.advantages-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 120px;
+  left: 270px;
+  width: 124px;
+  height: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(90deg);
+}
 
 .advantages-icon {
   display: flex;
@@ -61,15 +71,5 @@
   }
   .advantages-list {
     gap: 100px;
-  }
-  .advantages-item:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 120px;
-    left: 270px;
-    width: 124px;
-    height: 0px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    transform: rotate(90deg);
   }
 }
