@@ -1,5 +1,5 @@
 .footer-section {
-  min-width: 300px;
+  /* min-width: 300px; */
   background-color: var(--secondary-color);
   padding: 32px 0;
 }
@@ -168,8 +168,8 @@
   transition: stroke var(--transition-timings);
 }
 
-.footer-socilal-icon:hover,
-.footer-socilal-icon:focus {
+.footer-social-img:hover .footer-socilal-icon,
+.footer-social-img:focus .footer-socilal-icon {
   stroke: var(--brand-color);
 }
 
