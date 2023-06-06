@@ -24,10 +24,6 @@
 .how-its-made-part {
   color: #fd9222;
 }
-
-.how-its-made-container {
-  padding: 0 20px;
-}
 @media only screen and (min-width: 1200px) {
   .how-its-made-container {
     display: flex;
@@ -38,11 +34,12 @@
 .how-its-made-holder {
   position: relative;
   border-radius: 15px;
+  overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
     .how-its-made-holder {
         width: 335px;
-        height: 700px;
+        height: 500px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -71,6 +68,49 @@
 }
 .how-its-made-overlay{
     border-radius: 15px;
+}
+@media only screen and (max-width: 767px) {
+    .how-its-made-overlay {
+        width: 335px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .how-its-made-overlay {
+        width: 614px;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .how-its-made-overlay {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .how-its-made-image {
+        width: 335px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .how-its-made-image {
+        width: 614px;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .how-its-made-image {
+        width: 600px;
+        height: 400px;
+    }
 }
 .how-its-made-cont {
   position: absolute;
