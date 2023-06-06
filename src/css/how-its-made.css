@@ -133,6 +133,9 @@
   height: 44px;
   border-radius: 50%;
   border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 768px) {
   .how-its-made-cont {
@@ -164,7 +167,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-37%, -50%);
   fill: #ffffff;
 }
 .how-its-made-box {
