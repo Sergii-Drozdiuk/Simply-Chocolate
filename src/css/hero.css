@@ -1,21 +1,6 @@
-.hero-section {
-  padding-top: 75px;
-}
-@media only screen and (min-width: 768px) {
-  .hero-section {
-    padding-top: 75px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hero-section {
-    padding-top: 93px;
-  }
-}
 .hero-container {
   background-color: #1e1823;
   padding-top: 395px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 20px;
   background-image: linear-gradient(
       180deg,
@@ -28,7 +13,9 @@
   background-position: center;
   border-radius: 30px;
 }
-
+.hero-section {
+  padding-bottom: 72px;
+}
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -101,14 +88,17 @@
     max-width: 484px;
     font-size: 28px;
   }
+  .hero-section {
+    padding-bottom: 50px;
+  }
 }
 .hero-nav-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
   align-items: baseline;
 }
 .buy-now-btn {
+  margin-right: 14px;
   display: block;
   padding: 12px 28px;
   background: var(--brand-color);
@@ -167,6 +157,9 @@
 @media only screen and (max-width: 767px) {
   .buy-now-btn {
     margin-bottom: 32px;
+  }
+  .hero-container {
+    width: 93%;
   }
 }
 .hero-nav-link {
@@ -230,4 +223,12 @@
 .hero-skroll-icon:focus {
   background-color: var(--brand-color);
   fill: var(--light-color);
+}
+.hero-container {
+  width: 96%;
+}
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    padding-bottom: 72px;
+  }
 }

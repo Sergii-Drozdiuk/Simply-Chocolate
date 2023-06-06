@@ -1,12 +1,66 @@
 .subscribe-section {
   background-color: #1e1823;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../img/subscribe-bg/img-desktop.webp);
+    url(../img/subscribe-bg/Subcribemob.webp);
   padding: 72px 0;
-  max-width: 1200px;
+  min-width: 320px;
+  max-width: 375px;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subscribe-bg/Subcribemob2.webp);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/subscribe-bg/Subcribetablet1.webp);
+    max-width: 768px;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-section {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subscribe-bg/Subcribetablet2.webp);
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .subscribe-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/subscribe-bg/Subcribedisdpay1.webp);
+    max-width: 1200px;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-section {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subscribe-bg/Subcribedisdpay2.webp);
+    }
+  }
 }
 .subscribe-title {
   font-size: 24px;
@@ -80,7 +134,7 @@
 }
 @media only screen and (max-width: 767px) {
   .subscribe-section {
-    padding: 54px 0;
+    padding: 62px 0;
   }
   .subscribe-title {
     width: 291px;

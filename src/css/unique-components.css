@@ -173,8 +173,6 @@
   height: 270px;
   padding: 28px;
   border-radius: 15px;
-
-  overflow: auto;
   transform: rotateY(180deg);
 
   background-color: var(--light-color);
@@ -182,17 +180,32 @@
 
 @media only screen and (min-width: 1200px) {
   .back-card {
-    padding-right: 18px;
+    padding: 20px;
   }
 }
-
- 
 
 
 .back-card-title {
   text-align: start;
-  margin-bottom: 8px;
+  margin-bottom: 8px;  
 
+  font-weight: 600;
+  max-width: 214px;
   font-size: 18px;
   line-height: 1.2;
+
+}
+@media only screen and (min-width: 1200px) {
+  .unique-components-card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+  } 
+}
+
+
+
+.unique-components-item:nth-child(4) .unique-components-card-text{
+  -webkit-line-clamp: 7;
 }

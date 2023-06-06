@@ -1,49 +1,3 @@
-<!-- Modal mobile  -->
-
-<div class="mobile-menu-container modal-1 modal-header" data-modal="29">
-  <button class="button mobile-close-btn js-modal-close" type="button">
-    <svg class="mobile-close-icon" width="28" height="28">
-      <use href="./img/icons.svg#icon-x"></use>
-    </svg>
-  </button>
-
-  <ul class="mobile-nav-list">
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="./index.html">Home</a>
-    </li>
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="#how-its-made">How it's made?</a>
-    </li>
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="#our-products">Our products</a>
-    </li>
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="#top-sellers">Top sellers</a>
-    </li>
-    <li class="mobile-nav-item">
-      <a class="mobile-nav-link" href="#reviews">Chocolate is loved</a>
-    </li>
-  </ul>
-
-  <ul class="mobile-socials-list">
-    <li class="mobile-socials-item">
-      <a class="mobile-socials-link" href="https://www.instagram.com/">
-        <svg class="mobile-socials-icon" width="22" height="22">
-          <use href="./img/icons.svg#instagram"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="mobile-socials-item">
-      <a class="mobile-socials-link" href="https://twitter.com/">
-        <svg class="mobile-socials-icon" width="20" height="20">
-          <use href="./img/icons.svg#twitter"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</div>
-<div class="overlay-1 overlay-header" id="overlay-modal"></div>
-
 <!-- Modal review  -->
 
 <div class="modal-reviews modal" data-modal="20">
@@ -108,7 +62,7 @@
     <button type="submit" class="reviews-button-send">Send</button>
   </form>
 </div>
-<div class=".overlay-reviews overlay" id="overlay-modal"></div>
+<div class="overlay-reviews overlay" id="overlay-modal"></div>
 
 <!-- Subscribe modal  -->
 
@@ -146,9 +100,11 @@
 <!-- Top sellers modal  -->
 
 <div class="modal modal-buy-now" data-modal="1">
-  <svg class="modal-icon modal__cross js-modal-close" width="28" height="28">
-    <use href="./img/icons.svg#icon-x"></use>
-  </svg>
+  <button type="button" class="modal-buy-now-close-btn js-modal-close">
+    <svg class="modal-icon modal__cross" width="28" height="28">
+      <use href="./img/icons.svg#icon-x"></use>
+    </svg>
+  </button>
   <h2 class="modal-title"><span class="modal-title-span">BUY</span> NOW</h2>
   <ul class="modal-img-list">
     <li class="modal-img-list-item">
@@ -280,7 +236,7 @@
       <div class="number-container">
         <input
           required
-          id="gr"
+          id="gr-1"
           type="number"
           class="modal-gram-container"
           value="200"
@@ -289,7 +245,7 @@
           max="900"
         />
         <span class="validity"></span>
-        <label for="gr" class="number-gram">g</label>
+        <label for="gr-1" class="number-gram">g</label>
       </div>
     </li>
     <li class="modal-img-list-item">
@@ -351,7 +307,7 @@
       <div class="number-container">
         <input
           required
-          id="gr"
+          id="gr-2"
           type="number"
           class="modal-gram-container"
           value="300"
@@ -360,7 +316,7 @@
           max="900"
         />
         <span class="validity"></span>
-        <label for="gr" class="number-gram">g</label>
+        <label for="gr-2" class="number-gram">g</label>
       </div>
     </li>
   </ul>
@@ -382,7 +338,7 @@
         name="user_surname"
         class="pi-second-input"
         type="text"
-        id="pi"
+        id="pi-1"
         required
         spellcheck="true"
         pattern="[A-Za-z]{1,255}"
@@ -462,3 +418,5 @@
   </form>
 </div>
 <div class="overlay" id="overlay-modal"></div>
+
+<!-- Modal mobile  -->
