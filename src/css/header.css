@@ -39,6 +39,10 @@
   padding-top: 20px;
   padding-bottom: 14px;
   background-color: var(--grey-color);
+  
+}
+.header-container {
+  
 }
 .header-container {
   padding-left: 0;
