@@ -28,18 +28,10 @@
 .how-its-made-container {
   padding: 0 20px;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .how-its-made-container {
-    padding: 0 77px;
-  }
-}
-
 @media only screen and (min-width: 1200px) {
   .how-its-made-container {
     display: flex;
     column-gap: 20px;
-    padding: 0 32px;
   }
 }
 
@@ -206,7 +198,7 @@
 @media only screen and (min-width: 1200px) {
   .how-its-made-box {
     max-width: 516px;
-    padding: 14px 14px;
+    padding: 14px;
   }
 }
 
