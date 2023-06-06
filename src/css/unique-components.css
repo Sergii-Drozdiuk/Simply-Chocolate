@@ -1,7 +1,19 @@
 .unique-components-text {
   margin-bottom: 32px;
 }
-
+.unique-components-section {
+  padding-top: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .unique-components-section {
+    padding-top: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .unique-components-section {
+    padding-top: 128px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .unique-components-text {
     max-width: 486px;
