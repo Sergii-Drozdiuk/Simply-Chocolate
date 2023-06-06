@@ -164,7 +164,7 @@
 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -98%);
+  transform: translate(-50%, -50%);
   z-index: 5000;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
   padding: 48px;
@@ -190,15 +190,36 @@
   visibility: visible;
 }
 .subcribe-modal {
-  padding: 236px 40px 40px 40px;
-
-  background-image: url(../img/subscribe-bg/img-modal.webp);
+  padding: 201px 40px 40px 40px;
+  height: 360px;
+  background-image: url(../img/subscribe-bg/modamobsb1.webp);
   background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subcribe-modal {
+    background-image: url(../img/subscribe-bg/modalmobsb2.webp);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .subcribe-modal {
+    padding: 236px 40px 40px 40px;
+    height: 415px;
+    background-image: url(../img/subscribe-bg/modaltabletsb1.webp);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subcribe-modal {
+      background-image: url(../img/subscribe-bg/modaltabletsb2.webp);
+    }
+  }
 }
 .modal-sb-icon {
   top: 24px;
   right: 24px;
-  position: absolute;
+
   stroke: var(--light-color);
 }
 .modal-sb-icon {
@@ -288,8 +309,8 @@
 }
 @media only screen and (max-width: 767px) {
   .subcribe-modal {
-    width: 90%;
-    padding: 224px 24px 32px 24px;
+    width: 311px;
+    padding: 201px 24px 32px 24px;
   }
   .modal-sb-title {
     font-size: 20px;
@@ -311,5 +332,31 @@
   .input-sb-email::placeholder {
     font-size: 14px;
     line-height: 1.17;
+  }
+}
+/* btn */
+.modal-close-subscribe-btn {
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-close-icon);
+
+  transition: background-color var(--transition-duration-funs);
+}
+.modal-close-subscribe-btn:hover,
+.modal-close-subscribe-btn:focus {
+  background: #fcf1e0;
+}
+@media only screen and (min-width: 768px) {
+  .modal-close-subscribe-btn {
+    width: 40px;
+    height: 40px;
   }
 }
