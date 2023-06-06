@@ -104,8 +104,10 @@
     margin-bottom: 20px;
   }
 }
-
-.how-its-made-overlay {
+.how-its-made-overlay{
+    border-right: 15px;
+}
+/* .how-its-made-overlay {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
@@ -114,7 +116,7 @@
 .how-its-made-overlay:hover .how-its-made-video,
 .how-its-made-overlay:focus .how-its-made-video {
   transform: translate(0, 0);
-}
+} */
 
 .how-its-made-cont {
   position: absolute;
@@ -239,13 +241,7 @@
   background: #4c4c4c;
   border: 1px solid #eceded;
 }
-
-.how-its-made-video {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  transform: translate(0, 100%);
-  z-index: 2;
+a.its-made-link,
+a.made-vudeo {
+    display: inline-block;
 }
