@@ -138,8 +138,8 @@
   width: 13px;
   height: 13px;
 }
-.owl-carousel.owl-drag .owl-item {
-  max-width: 360px;
+.owl-carousel.owl-drag .owl-item .active {
+  width: 360px;
 }
 /*==================== MODAL  =========================*/
 

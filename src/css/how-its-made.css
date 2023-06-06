@@ -160,15 +160,10 @@
   overflow: hidden;
 }
 
-.how-its-made-icon:hover,
-.how-its-made-icon:focus {
-  z-index: 0;
-}
-
 .how-its-made-icon {
   position: absolute;
   top: 50%;
-  left: 57%;
+  left: 50%;
   transform: translate(-50%, -50%);
   fill: #ffffff;
 }
@@ -187,7 +182,6 @@
   .how-its-made-icon {
     width: 20px;
     height: 21px;
-    padding: 32px;
   }
 }
 @media only screen and (max-width: 1199px) {
