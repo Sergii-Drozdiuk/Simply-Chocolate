@@ -121,14 +121,14 @@
 }
 .container-card:hover > .card {
   transform: rotateY(180deg);
+
+  cursor: pointer;
 }
 .card {
   position: relative;
 
   transition: transform 500ms;
   transform-style: preserve-3d;
-
-  cursor: pointer;
 }
 
 .front-card,
