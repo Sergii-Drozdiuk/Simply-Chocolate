@@ -60,3 +60,9 @@ body {
   background: var(--grey-color);
   overflow-x: hidden;
 }
+body.active-1 {
+  overflow: hidden;
+}
+body.active {
+  overflow: hidden;
+}
