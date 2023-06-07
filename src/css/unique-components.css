@@ -120,6 +120,7 @@
   perspective: 500px;
 }
 .container-card:hover > .card {
+  cursor: pointer;
   transform: rotateY(180deg);
 }
 .card {
@@ -134,7 +135,6 @@
   backface-visibility: hidden;
 }
 
- 
 .front-card {
   display: flex;
   padding: 28px;
@@ -188,30 +188,24 @@
   }
 }
 
-
 .back-card-title {
   text-align: start;
   margin-bottom: 8px;
-  
 
-  
   font-weight: 600;
   max-width: 214px;
   font-size: 18px;
 
   line-height: 1.2;
-
 }
 
-.unique-components-card-text{
-    display: -webkit-box;
-    -webkit-line-clamp: 9;
-    -webkit-box-orient: vertical;
-     overflow: hidden;
-  
+.unique-components-card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.unique-components-item:nth-child(4) .unique-components-card-text{
+.unique-components-item:nth-child(4) .unique-components-card-text {
   -webkit-line-clamp: 7;
 }
-
