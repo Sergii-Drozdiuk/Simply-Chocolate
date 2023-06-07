@@ -193,6 +193,9 @@
     max-width: 516px;
     padding: 14px;
   }
+  .how-its-made-container {
+    flex-direction: row;
+  }
 }
 
 .how-its-made-title {
