@@ -127,6 +127,8 @@
 
   transition: transform 500ms;
   transform-style: preserve-3d;
+
+  cursor: pointer;
 }
 
 .front-card,
