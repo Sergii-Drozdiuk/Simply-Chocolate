@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      document.body.classList.add('active');
     });
   });
 
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      document.body.classList.remove('active');
     });
   });
 
