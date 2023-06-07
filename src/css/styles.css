@@ -58,4 +58,5 @@ body {
   letter-spacing: -0.02em;
   color: var(--main-color);
   background: var(--grey-color);
+  overflow-x: hidden;
 }
