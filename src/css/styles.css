@@ -60,3 +60,6 @@ body {
   background: var(--grey-color);
   overflow-x: hidden;
 }
+body.modal-open {
+  overflow: hidden;
+}

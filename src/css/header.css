@@ -1,19 +1,15 @@
-.modal-header {
+.modal {
   height: 100vh;
-  opacity: 0;
-  visibility: hidden;
   padding: 136px 46px 20px 50px;
   width: 220px;
-  position: absolute;
-  right: 100%;
-  z-index: 100000;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
   background: #1e1823;
 }
-.overlay-header {
+.backdrop {
+  pointer-events: none;
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -21,17 +17,14 @@
   backdrop-filter: blur(7px) brightness(0.86) grayscale(28%) opacity(92%);
   -webkit-backdrop-filter: blur(7px) brightness(0.86) grayscale(28%)
     opacity(92%);
-  z-index: 10001;
+  z-index: 1000;
+  pointer-events: none;
+  overflow-y: scroll;
 }
-.modal-1.active-1,
-.overlay-1.active-1 {
+.backdrop.is-open {
+  pointer-events: all;
   opacity: 1;
   visibility: visible;
-}
-.modal-1.active-1 {
-  transition: right 0.5s ease-in-out;
-  top: 0;
-  right: 0;
 }
 .header {
   width: 100%;
