@@ -37,80 +37,71 @@
   overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
-    .how-its-made-holder {
-        width: 335px;
-        height: 500px;
-    }
+  .how-its-made-holder {
+    width: 119%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .how-its-made-holder {
-        width: 614px;
-        height: 400px;
-    }
+  .how-its-made-holder {
+    width: 614px;
+    height: 400px;
+  }
 }
 @media only screen and (min-width: 1200px) {
-    .how-its-made-holder {
-        width: 600px;
-        height: 400px;
-    }
+  .how-its-made-holder {
+    width: 600px;
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 1199px) {
-  .how-its-made-holder {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 1199px) {
-  .how-its-made-holder {
-    margin-bottom: 20px;
+}
+.how-its-made-overlay {
+  border-radius: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .how-its-made-overlay {
+    width: 335px;
+    height: 500px;
   }
 }
-.how-its-made-overlay{
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .how-its-made-overlay {
+    width: 614px;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-its-made-overlay {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .how-its-made-image {
+    width: 335px;
+    height: 500px;
     border-radius: 15px;
-}
-@media only screen and (max-width: 767px) {
-    .how-its-made-overlay {
-        width: 335px;
-        height: 500px;
-    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .how-its-made-overlay {
-        width: 614px;
-        height: 400px;
-    }
+  .how-its-made-image {
+    width: 614px;
+    height: 400px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .how-its-made-overlay {
-        width: 600px;
-        height: 400px;
-    }
-}
-
-
-
-@media only screen and (max-width: 767px) {
-    .how-its-made-image {
-        width: 335px;
-        height: 500px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .how-its-made-image {
-        width: 614px;
-        height: 400px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .how-its-made-image {
-        width: 600px;
-        height: 400px;
-    }
+  .how-its-made-image {
+    width: 600px;
+    height: 400px;
+  }
 }
 .how-its-made-cont {
   position: absolute;
@@ -173,10 +164,6 @@
   }
 }
 @media only screen and (max-width: 1199px) {
-  .how-its-made-box {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -236,5 +223,19 @@
   border: 1px solid #eceded;
 }
 a.its-made-link {
-    display: inline-block;
+  display: inline-block;
+}
+@media only screen and (max-width: 374px) {
+  .how-its-made-overlay {
+    width: 84%;
+    height: 95%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .how-its-made-cont {
+    transform: translate(-102%, -50%);
+  }
+  .how-its-made-holder {
+    margin-bottom: 20px;
+  }
 }
