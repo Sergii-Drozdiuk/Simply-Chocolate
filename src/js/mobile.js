@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (key == 27) {
         document.querySelector('.modal.active-1').classList.remove('active-1');
         document.querySelector('.overlay-1').classList.remove('active-1');
+        document.body.classList.remove('active-1');
       }
     },
     false
@@ -71,5 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
   overlay.addEventListener('click', function () {
     document.querySelector('.modal.active-1').classList.remove('active-1');
     this.classList.remove('active-1');
+    document.body.classList.remove('active-1');
   });
 });
